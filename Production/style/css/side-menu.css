@@ -1,0 +1,89 @@
+.side-menu {
+  background-color: transparent;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2002;
+}
+.side-menu .menu {
+  overflow-y: auto;
+  background-color: #FFFFFF;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  z-index: 999;
+  width: 300px;
+}
+.side-menu .menu .image-brand {
+  padding: 50px;
+}
+.side-menu .container-options {
+  height: 40%;
+  overflow: scroll;
+}
+.side-menu .container-options .option-menu-container {
+  background-color: transparent;
+  position: relative;
+  width: 80%;
+  border-radius: 0px ;
+  color: white;
+  padding: 10px;
+  margin-bottom: 5px;
+  left: 10%;
+  border-radius: 15px;
+}
+.side-menu .container-options .option-menu-container a {
+  text-decoration: none;
+  color: #54565B !important;
+}
+.side-menu .container-options .option-menu-ref {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+.side-menu .container-options .option-menu-ref label {
+  margin: 0;
+}
+.side-menu .container-options .option-menu-icon {
+  text-align: center;
+  height: 30px;
+  width: 30px;
+  padding: 0;
+  line-height: 32.5px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  background: #ffffff;
+  border: 0;
+  outline: none;
+  position: relative;
+  color: #54565B;
+  margin-right: 15px;
+  font-size: 1.5rem;
+}
+.side-menu .close-menu {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.side-menu .close-menu .btn-close {
+  background-color: #54565B;
+  width: 100%;
+  border-radius: 0px !important;
+  color: white;
+}
+/*Animations*/
+/*Animations to item producto*/
+.slide-enter-active {
+  transition: all 0.3s ease;
+}
+.slide-leave-active {
+  transition: all 0.3s cubic-bezier(1, 0.5, 0.8, 1);
+}
+.slide-enter,
+.slide-leave-to {
+  transform: translateX(-100%);
+}

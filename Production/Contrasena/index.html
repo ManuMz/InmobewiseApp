@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CambioContrasena</title>
+
+
+   
+    <link rel="stylesheet/less" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet/less" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/brands.min.css">
+    <link rel="stylesheet/less" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/fontawesome.min.css">
+    <!--General styles-->
+    <link rel="stylesheet/less" href="../style/animations.less">
+    <link rel="stylesheet/less" href="../style/buttons.less">
+    <link rel="stylesheet/less" href="../style/ar-anim.less">
+    <link rel="stylesheet/less" href="../style/sweet-alert.less">
+    <link rel="stylesheet/less" href="../style/inputs.less">
+    <!-- <link rel="stylesheet" href="https://arvispace.com/lib/ImagenesPedidos/css/login.css"> -->
+    <link rel="stylesheet" href="../style/css/login.css">
+
+    <!--<link rel="stylesheet/less" href="../style/login.less">-->
+    <!-- <link rel="stylesheet" href="../style/css/login.css"> -->   
+    
+
+    <!--
+       <link rel='stylesheet/less' href='../style/register.less'>
+    -->
+    <link rel="stylesheet" href="../style/css/register.css">
+
+    <link rel="stylesheet/less" href="../style/text.less">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+
+    <!--Styles-->
+    <link rel="stylesheet/less" href="../style/text.less">
+
+    <!--JS libraries-->
+    <script src="https://arvispace.com/lib/jquery/jquery.js"></script>
+    
+    <!--JS Bootstrap scripts-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://arvispace.com/lib/bootstrap/js/bootstrap.js"></script>
+
+    <!--Sweet alert libraries-->
+    <script src="https://arvispace.com/lib/sweet-alert/dist/sweetalert2.all.min.js"></script>
+    
+    <!--Vue development-->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <!--Less style-->
+    <script src="https://cdn.jsdelivr.net/npm/less"></script>
+
+    <!--Axios http request-->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    
+    <!--CSS libraries-->
+    <link rel="stylesheet" href="https://arvispace.com/lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://arvispace.com/lib/icons/index.css">
+    
+    <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+
+    <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-analytics.js"></script>
+
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-firestore.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+
+
+<body class="bodyLogin">
+
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+           apiKey: "AIzaSyDp2gyFs-OHmMGngXfKLe_kJNyOJVZI_wQ",
+           authDomain: "arvis-61e35.firebaseapp.com",
+           databaseURL: "https://arvis-61e35-default-rtdb.firebaseio.com",
+           projectId: "arvis-61e35",
+           storageBucket: "arvis-61e35.appspot.com",
+           messagingSenderId: "317100464549",
+          appId: "1:317100464549:web:e6349181d2d7b2c2ffb04c",
+           measurementId: "G-7J1TZ9VSV0"
+          };
+
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+
+    <div id="login">
+        <ar-anim
+        :is-active="isArAnimActive"
+        @request-facebook="requestFacebook"
+        @request-google="requestGoogle"
+        @request-apple="requestApple"
+        @active-login="handleLogin"
+        @active-register="handleRegister"
+        @active-phone="activatePhone"
+        @active-password="setActiveresetPassword"
+        >
+        </ar-anim>
+        <user-principal
+        >
+        </user-principal>
+
+
+        <component-login
+        
+            @hide-login="handleLogin"
+            :is-active="isLoginActive"
+            @request-facebook="requestFacebook"
+            @request-google="requestGoogle"
+            @request-apple="requestApple"
+            @on-submit="onSubmit"
+            @open-register="setContent"
+            @reset-password="resetPassword"
+            @active-phone="activatePhone"
+        ></component-login>
+
+        <component-register
+            @hide-login="handleLogin"
+            :is-active="isRegisterActive"
+            @on-submit="onRegister"
+            @open-login="setContent2"
+            @cancel= "closeRegister"
+
+        ></component-register>
+
+
+
+         <reset-password
+           @hide-login="handleLogin"
+          :is-active="resetPassIsActive"
+           @cancel= "closeResetPassword"
+           :initialize = "initialize"
+           @password-updated = "closeResetPassword"
+           @open-reset="setContent3"
+
+            >
+        </reset-password>
+
+
+        <modal-to-sms-code
+        :is-active="smsCodeIsActive"
+        @close-sms="closesms"
+        @cancel= "closetosms"
+
+       ></modal-to-sms-code>
+    
+<!----    
+    <loading
+        :is-active="loadLogin"
+    ></loading>
+-->
+
+    </div>
+</body>
+<!--Scripts jquery to Vue-->
+<script src="../js/utils.js"></script>
+
+<!--General components-->
+<script src="../components/user-principal.js"></script>
+<script src="../components/buttons.js"></script>
+<script src="../components/rounded-buttons.js"></script>
+<script src="../components/inputs.js"></script>
+<script src="../components/forms.js"></script>
+<script src="../components/ar-anim.js"></script>
+
+<!--Components to login-->
+<script src="../components/register.js"></script>
+<script src="../components/contrasena.js"></script>
+
+
+<script src="../components/modal-to-sms-code.js"></script>
+
+
+<script src="../components/loading-download.js"></script>
+<script src="../components/reset-password.js"></script>
+
+<!--Initialize App request and routes to services-->
+<script src="js/init.js"></script>
+
+</html>

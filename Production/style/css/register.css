@@ -1,0 +1,25 @@
+#register .container-fluid {
+  padding: 0 !important;
+}
+#register .container-fluid .login-head {
+  width: 100%;
+  height: 20rem;
+  background-image: url('../images/fondo-login.png');
+  background-size: cover;
+  background-position: bottom;
+}
+#register .container-fluid .roudend-button.center {
+  position: absolute;
+  top: 18rem;
+}
+#register .container-fluid .container {
+  padding-top: 3rem;
+}
+#register .container-fluid p {
+  padding-top: 3rem;
+  text-align: center;
+}
+#register .container-fluid p.cancel {
+  padding-top: 0.5rem;
+  text-align: center;
+}

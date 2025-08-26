@@ -1,0 +1,857 @@
+/* imagen de fondo del login*/
+
+.bodyLogin{
+  width:100%;
+  height:100vh;
+  background-image: url('https://arvispace.com/lib/ImagenesPedidos/fondos/fondo-login.png');
+  /*background-image: url('../images/fondo-login.png');*/
+  background-size: cover;
+  background-position: center;
+  background-repeat: inherit;
+}
+
+
+/*poner la sombra de la imagen*/
+.bodyLogin:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.3);
+}
+
+
+.container-fluidLogin {
+  width:30%;
+  height: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: auto;
+  margin-left: 35%;
+  margin-top: 5%;
+  position: absolute;
+  border: 2px;
+  border-width: 1px;
+  border-style: groove;
+  box-shadow: 0px 0px 3px #fff;
+  border-radius: 5px;
+}
+
+.container-fluidLogin:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.4);
+}
+
+#imagenLogo{
+  border-style: none;
+  width: 50%;
+  margin-top: 10%;
+  margin: 18px auto;
+  display: block;
+  -webkit-filter: blur(0px);
+  filter: blur(0px);
+  
+}
+
+.textoLogin{
+  color: #ffffff;
+  font-weight: 600;
+  -webkit-filter: blur(0px);
+  filter: blur(0px);
+}
+
+.subtextoLogin{
+  color: #00e7fffa;
+  text-decoration: underline;
+  -webkit-filter: blur(0px);
+  filter: blur(0px);
+}
+
+
+/*botones de Login Principal*/
+
+#botonesIniciarSesion{
+  width: 100%;
+  margin-bottom: 1%;
+  margin-top: 8%;margin-bottom: 5%;-webkit-filter: blur(0px);filter: blur(0px);
+}
+
+#botonIniciarTelefono{
+  width: 100%;
+  margin-bottom: 1%;
+  margin-top: 8%;margin-bottom: 5%;-webkit-filter: blur(0px);filter: blur(0px);
+}
+
+#botonRegistrarse{
+  width: 100%;
+  margin-bottom: 1%;
+  margin-top: 8%;margin-bottom: 5%;-webkit-filter: blur(0px);filter: blur(0px);
+}
+
+#botonSalir{
+  width: 100%;
+  margin-bottom: 1%;
+  margin-top: 8%;margin-bottom: 5%;-webkit-filter: blur(0px);filter: blur(0px);
+}
+
+.ios-btn-primary{
+  width: 100%;  
+  margin-top:2%;
+
+}
+
+@media only screen and (max-width : 1200px) { /*ipad pro*/
+
+  .container-fluidLogin {
+    width: 60%;
+    height: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: 20%;
+    margin-top: 30%;
+    position: absolute;
+    border: 2px;
+    border-width: 1px;
+    border-style: groove;
+    box-shadow: 0px 0px 3px #fff;
+    border-radius: 5px;
+  }
+
+  .container-fluidLogin:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(189, 6, 6, 0.4);
+  }
+
+  .textoLogin {
+    font-size: 85%;
+    color: #ffffff;
+    font-weight: 600;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+  }
+
+  #imagenLogo {
+    border-style: none;
+    width: 75%;
+    margin-top: 10%;
+    margin: 18px auto;
+    display: block;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+  }
+
+  /*contenido reset password*/
+  .container-fluidReset {
+    width: 70%;
+    height: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: 15%;
+    margin-top: 25%;
+    position: absolute;
+    border: 2px;
+    border-width: 1px;
+    border-style: groove;
+    box-shadow: 0px 0px 3px #fff;
+    border-radius: 5px;
+  }
+
+  .container-fluidReset:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(189, 6, 6, 0.4);
+      /* background-color: rgba(0,0,0,0.3); */
+  }
+
+
+  /*contenido reset password*/
+  .container-fluidRegistro {
+    width: 70%;
+    height: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: 15%;
+    margin-top: 20%;
+    position: absolute;
+    border: 2px;
+    border-width: 1px;
+    border-style: groove;
+    box-shadow: 0px 0px 3px #fff;
+    border-radius: 5px;
+  }
+
+  .container-fluidRegistro:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(189, 6, 6, 0.4);
+      /* background-color: rgba(0,0,0,0.3); */
+  }
+
+  
+  /*contenido de registro sms*/
+  .container-fluidSMS{
+    width: 70%;
+    height: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: 15%;
+    margin-top: 35%;
+    position: absolute;
+    border: 2px;
+    border-width: 1px;
+    border-style: groove;
+    box-shadow: 0px 0px 3px #fff;
+    border-radius: 5px;
+  }
+
+  .container-fluidSMS:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(189, 6, 6, 0.4);
+      /* background-color: rgba(0,0,0,0.3); */
+  }
+
+}
+
+@media only screen and (max-width : 979px) {/*ipad*/
+
+  .container-fluidLogin {
+    width: 70%;
+    height: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: 15%;
+    margin-top: 25%;
+    position: absolute;
+    border: 2px;
+    border-width: 1px;
+    border-style: groove;
+    box-shadow: 0px 0px 3px #fff;
+    border-radius: 5px;
+  }
+
+  .container-fluidLogin:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(14, 212, 47, 0.4);
+  }
+
+  .textoLogin {
+    font-size: 85%;
+    color: #ffffff;
+    font-weight: 600;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+  }
+
+  #imagenLogo {
+    border-style: none;
+    width: 75%;
+    margin-top: 10%;
+    margin: 18px auto;
+    display: block;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+  }
+
+  /*contenido reset password*/
+  .container-fluidReset {
+    width: 70%;
+    height: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: 15%;
+    margin-top: 25%;
+    position: absolute;
+    border: 2px;
+    border-width: 1px;
+    border-style: groove;
+    box-shadow: 0px 0px 3px #fff;
+    border-radius: 5px;
+  }
+
+  .container-fluidReset:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(14, 212, 47, 0.4);
+      /* background-color: rgba(0,0,0,0.3); */
+  }
+
+
+  /*contenido reset password*/
+  .container-fluidRegistro {
+    width: 70%;
+    height: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: 15%;
+    margin-top: 14%;
+    position: absolute;
+    border: 2px;
+    border-width: 1px;
+    border-style: groove;
+    box-shadow: 0px 0px 3px #fff;
+    border-radius: 5px;
+  }
+
+  .container-fluidRegistro:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(6, 189, 6, 0.4);
+      /* background-color: rgba(0,0,0,0.3); */
+  }
+
+  /*contenido de registro sms*/
+  .container-fluidSMS{
+    width: 70%;
+    height: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: 15%;
+    margin-top: 35%;
+    position: absolute;
+    border: 2px;
+    border-width: 1px;
+    border-style: groove;
+    box-shadow: 0px 0px 3px #fff;
+    border-radius: 5px;
+  }
+
+  .container-fluidSMS:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(6, 189, 6, 0.4);
+      /* background-color: rgba(0,0,0,0.3); */
+  }
+
+}
+
+@media only screen and (max-width : 767px) {
+
+  .container-fluidLogin {
+    width: 70%;
+    height: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: 15%;
+    margin-top: 12%;
+    position: absolute;
+    border: 2px;
+    border-width: 1px;
+    border-style: groove;
+    box-shadow: 0px 0px 3px #fff;
+    border-radius: 5px;
+  }
+  
+  .container-fluidLogin:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(11, 189, 174, 0.4);
+  }
+
+  .textoLogin {
+    font-size: 85%;
+    color: #ffffff;
+    font-weight: 600;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+  }
+
+  #imagenLogo {
+    border-style: none;
+    width: 75%;
+    margin-top: 10%;
+    margin: 18px auto;
+    display: block;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+  }
+
+  /*contenido reset password*/
+  .container-fluidReset {
+    width: 70%;
+    height: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: 15%;
+    margin-top: 25%;
+    position: absolute;
+    border: 2px;
+    border-width: 1px;
+    border-style: groove;
+    box-shadow: 0px 0px 3px #fff;
+    border-radius: 5px;
+  }
+
+  .container-fluidReset:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(11, 189, 174, 0.4);
+      /* background-color: rgba(0,0,0,0.3); */
+  }
+
+
+  /*contenido reset Registro*/
+  .container-fluidRegistro {
+    width: 70%;
+    height: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: 15%;
+    margin-top: 1%;
+    position: absolute;
+    border: 2px;
+    border-width: 1px;
+    border-style: groove;
+    box-shadow: 0px 0px 3px #fff;
+    border-radius: 5px;
+  }
+
+  .container-fluidRegistro:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(6, 168, 189, 0.4);
+      /* background-color: rgba(0,0,0,0.3); */
+  }
+
+  .form input{
+    width: 100%;
+    height: 45px;
+  }
+
+
+  /*contenido de registro sms*/
+  .container-fluidSMS{
+    width: 70%;
+    height: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: 15%;
+    margin-top: 35%;
+    position: absolute;
+    border: 2px;
+    border-width: 1px;
+    border-style: groove;
+    box-shadow: 0px 0px 3px #fff;
+    border-radius: 5px;
+  }
+
+  .container-fluidSMS:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(6, 168, 189, 0.4);
+      /* background-color: rgba(0,0,0,0.3); */
+  }
+
+}
+
+@media only screen and (max-width : 480px) { /*surface dou*/
+
+  .container-fluidLogin {
+    width: 80%;
+    height: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: 10%;
+    margin-top: 9vh;
+    position: absolute;
+    border: 2px;
+    border-width: 1px;
+    border-style: groove;
+    box-shadow: 0px 0px 3px #fff;
+    border-radius: 5px;
+  }
+  
+  .container-fluidLogin:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(6, 24, 122, 0.4);
+  }
+
+  .textoLogin {
+    font-size: 85%;
+    color: #ffffff;
+    font-weight: 600;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+  }
+
+  .form input{
+    height: 40px;
+    width: 100%;
+    margin-top:8%;
+  }
+
+  #imagenLogo {
+    border-style: none;
+    width: 75%;
+    margin-top: 10%;
+    margin: 18px auto;
+    display: block;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+  }
+
+  /*contenido reset password*/
+  .container-fluidReset {
+    width: 70%;
+    height: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: 15%;
+    margin-top: 25%;
+    position: absolute;
+    border: 2px;
+    border-width: 1px;
+    border-style: groove;
+    box-shadow: 0px 0px 3px #fff;
+    border-radius: 5px;
+  }
+
+  .container-fluidReset:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(6, 24, 122, 0.4);
+      /* background-color: rgba(0,0,0,0.3); */
+  }
+
+   /*contenido registro*/
+   .container-fluidRegistro {
+    width: 86%;
+    height: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: 7%;
+    margin-top: 1%;
+    position: absolute;
+    border: 2px;
+    border-width: 1px;
+    border-style: groove;
+    box-shadow: 0px 0px 3px #fff;
+    border-radius: 5px;
+}
+
+  .container-fluidRegistro:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(6, 24, 122, 0.4);
+      /* background-color: rgba(0,0,0,0.3); */
+  }
+
+  .container-fluidRegistro .form input{
+    width: 100%;
+    height: 45px;
+  }
+
+  .bodyLogin {
+    width: 100%;
+    height: 113vh;
+    background-image: url(https://arvispace.com/lib/ImagenesPedidos/fondos/fondo-login.png);
+    /* background-image: url(../images/fondo-login.png); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: inherit;
+  }
+
+
+   /*contenido de registro sms*/
+   .container-fluidSMS{
+    width: 70%;
+    height: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: 15%;
+    margin-top: 50%;
+    position: absolute;
+    border: 2px;
+    border-width: 1px;
+    border-style: groove;
+    box-shadow: 0px 0px 3px #fff;
+    border-radius: 5px;
+  }
+
+  .container-fluidSMS:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(6, 24, 122, 0.4);
+      /* background-color: rgba(0,0,0,0.3); */
+  }
+}
+
+
+@media only screen and (max-width : 320px) {
+
+  
+  .container-fluidLogin {
+    width: 86%;
+    height: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: 7%;
+    margin-top: 5vh;
+    position: absolute;
+    border: 2px;
+    border-width: 1px;
+    border-style: groove;
+    box-shadow: 0px 0px 3px #fff;
+    border-radius: 5px;
+  }
+
+
+  .container-fluidLogin:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(161, 3, 77, 0.4);
+      /* background-color: rgba(0,0,0,0.3); */
+
+  }
+
+  .textoLogin {
+    font-size: 85%;
+    color: #ffffff;
+    font-weight: 600;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+  }
+
+  .form input{
+    height: 40px;
+    width: 100%;
+    margin-top:8%;
+  }
+
+  /*contenido reset password*/
+  .container-fluidReset {
+    width: 70%;
+    height: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: 15%;
+    margin-top: 25%;
+    position: absolute;
+    border: 2px;
+    border-width: 1px;
+    border-style: groove;
+    box-shadow: 0px 0px 3px #fff;
+    border-radius: 5px;
+  }
+
+  .container-fluidReset:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(161, 3, 77, 0.4);
+      /* background-color: rgba(0,0,0,0.3); */
+  }
+
+  /*contenido registro*/
+  .container-fluidRegistro {
+    width: 86%;
+    height: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: 7%;
+    margin-top: 1%;
+    position: absolute;
+    border: 2px;
+    border-width: 1px;
+    border-style: groove;
+    box-shadow: 0px 0px 3px #fff;
+    border-radius: 5px;
+  }
+
+  .container-fluidRegistro:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(161, 3, 77, 0.4);
+      /* background-color: rgba(0,0,0,0.3); */
+  }
+
+  .container-fluidRegistro .form input{
+    width: 100%;
+    height: 45px;
+  }
+
+  .bodyLogin {
+    width: 100%;
+    height: 125vh;
+    background-image: url(https://arvispace.com/lib/ImagenesPedidos/fondos/fondo-login.png);
+    /* background-image: url(../images/fondo-login.png); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: inherit;
+  }
+
+
+  .container-fluidSMS {
+    width: 80%;
+    height: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: 10%;
+    margin-top: 50%;
+    position: absolute;
+    border: 2px;
+    border-width: 1px;
+    border-style: groove;
+    box-shadow: 0px 0px 3px #fff;
+    border-radius: 5px;
+  }
+
+  .container-fluidSMS:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(161, 3, 77, 0.4);
+      /* background-color: rgba(0,0,0,0.3); */
+  }
+  
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) { 
+  .container-fluidSMS:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(219, 141, 177, 0.4);
+      /* background-color: rgba(0,0,0,0.3); */
+  }
+}
+
+
+
+
+/*#login .container-fluid {
+  padding: 0 !important;
+}
+#login .container-fluid .login-head {
+  width: 100%;
+  height: 20rem;
+  background-image: url('../images/fondo-login.png');
+  background-size: cover;
+  background-position: right;
+}
+#login .container-fluid .roudend-button.center {
+  position: absolute;
+  top: 18rem;
+}
+#login .container-fluid .container {
+  padding-top: 3rem;
+}
+#login .container-fluid p {
+  padding-top: 3rem;
+  text-align: center;
+}
+#login .container-fluid p.cancel {
+  padding-top: 0.5rem;
+  text-align: center;
+}*/

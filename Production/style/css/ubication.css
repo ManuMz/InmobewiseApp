@@ -1,0 +1,18 @@
+#ubication {
+  padding-top: 5rem;
+}
+#ubication .container .wrapper {
+  height: calc(100vh - 5rem);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+#ubication .container .wrapper .form h1 {
+  text-align: center;
+}
+#ubication .container .wrapper .form .button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}

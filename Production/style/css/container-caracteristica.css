@@ -1,0 +1,42 @@
+.container-variante {
+  position: fixed;
+  background: rgba(15, 15, 25, 0.5);
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 3000;
+}
+.container-variante .fixed-bottom {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background: white;
+}
+.container-variante .variante .scrollable-x {
+  position: relative;
+  overflow: auto;
+  white-space: nowrap;
+}
+.container-variante .variante .scrollable-x .item-variante {
+  display: inline-block;
+  border-radius: 0px !important;
+  min-width: 0px!important;
+  max-width: 120px!important;
+  margin-right: 15px;
+  text-align: center;
+  background-color: white;
+  color: black !important;
+  border-radius: 10px !important;
+  padding: 5px;
+}
+.container-variante .variante .scrollable-x .active {
+  background: gainsboro;
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}

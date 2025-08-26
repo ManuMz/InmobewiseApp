@@ -1,0 +1,101 @@
+
+.side-menu{
+    background-color: transparent;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3002;
+
+    .menu{
+        overflow-y: auto;
+        background-color: #0F0F19;
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100vh;
+        z-index: 999;
+        width: 300px;
+
+        .image-brand{
+            padding: 50px; 
+        }
+    }
+    .container-options{
+        height: 40%;
+        overflow: scroll;
+        .option-menu-container{
+            background-color: #3B3B63;
+            position: relative;
+            width: 80%;
+            border-radius: 0px ;
+            color: white;
+            padding: 10px;
+            margin-bottom: 5px;
+            left: 10%;
+            border-radius: 15px;
+            
+            a{
+                text-decoration: none;
+                color:#FFFFFF !important;
+            }
+
+        }
+        .option-menu-ref{
+            display: flex;
+            align-items: center;
+            align-content: center;
+
+            label{
+                margin: 0;
+            }
+        }
+        .option-menu-icon{
+            text-align: center;
+            height: 30px;
+            width: 30px;
+            padding: 0;
+            line-height: 32.5px;
+            border-radius: 50%;
+            -webkit-box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+            background: white;
+            border: 0;
+            outline: none;
+            position: relative;
+            color: #0F0F19;
+            margin-right: 15px;
+            font-size: 1.5rem;
+        }
+    }
+
+
+    .close-menu{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+
+        .btn-close{
+            background-color: #3B3B63;
+            width: 100%;
+            border-radius: 0px !important;
+            color: white;
+        }
+    }
+}
+
+
+/*Animations*/
+
+/*Animations to item producto*/
+.slide-enter-active {
+    transition: all .3s ease;
+}
+.slide-leave-active {
+    transition: all .3s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slide-enter, .slide-leave-to
+    /* .slide-fade-leave-active below version 2.1.8 */ {
+    transform: translateX(-100%);
+}

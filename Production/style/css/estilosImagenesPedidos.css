@@ -1,0 +1,239 @@
+
+/*contenido de imagen Pedidos Pendientes*/
+#Contenedor_Pedidos_Pendientes{
+    text-align: -webkit-center;
+    z-index: 1000;
+    margin-top: -76vh;
+}
+
+/*contenedor de pedidos general else*/
+#Contenedor_Pedidos_General{
+    text-align: -webkit-center;z-index: 1000;margin-top: -76vh;
+}
+
+#subcont_Imagen_Pedidos_Pendientes{
+    width: 85%;
+}
+
+#subcont_Texto_Pedidos_Pendientes{
+    width: 100%;
+    margin-top: -8%;
+}
+
+
+
+/*contenido de imagen Enviados*/
+
+#Contenedor_Pedidos_Enviados{
+    text-align: -webkit-center;
+    z-index: 1000;
+    margin-top: -66vh;
+}
+
+#subcont_Imagen_Pedidos_Enviados{
+    width: 85%;
+    margin-top: 1.5%;
+}
+
+#subcont_Texto_Pedidos_Enviados{
+    width: 100%;
+    margin-top: -8%;
+}
+
+
+/*contenido de imagen Entregados*/
+#Contenedor_Pedidos_Entregados{
+    text-align: -webkit-center;
+    z-index: 1000;
+    margin-top: -66vh;
+}
+
+#subcont_Imagen_Pedidos_Entregados{
+    width: 85%;
+    margin-top: 1.5%;
+}
+
+#subcont_Texto_Pedidos_Entregados{
+    width: 100%;
+    margin-top: -8%;
+}
+
+/*contenido de imagen Cancelados*/
+#Contenedor_Pedidos_Cancelados{
+    text-align: -webkit-center;
+    z-index: 1000;
+    margin-top: -66vh;
+}
+
+#subcont_Imagen_Pedidos_Cancelados{
+    width: 85%;
+    margin-top: 1.5%;
+}
+
+#subcont_Texto_Pedidos_Cancelados{
+    width: 100%;
+    margin-top: -8%;
+}
+
+
+/*imagenes pedidos*/
+#imagenPedidosGeneral{
+  /*overflow: hidden;vertical-align: middle;width: auto;height: 46vh;*/
+  overflow: hidden;
+  vertical-align: middle;
+  width: 70%;
+  height: auto;
+}
+
+
+/*Texto pedidos*/
+#textoPedidoGeneral{
+    font-size: 180%;
+    margin-left: 5%;
+    font-weight: bolder;
+    color: #ffffff;
+    text-shadow: 0px -1px 0.9px #837f7f, 1px 1px 0px #201d1d, 2px 1px 0px #000000;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+    /*contenido de imagen Pedidos Pendientes*/
+    #Contenedor_Pedidos_Pendientes{
+        text-align: -webkit-center;
+        z-index: 1000;
+        margin-top: -60vh;
+    }
+    
+    /*contenedor de pedidos general else*/
+    #Contenedor_Pedidos_General{
+        text-align: -webkit-center;
+        z-index: 1000;
+        margin-top: -66vh;
+    }
+
+    #imagenPedidosGeneral {
+        overflow: hidden;
+        vertical-align: middle;
+        width: 100%;
+        height: auto;
+    }
+
+    #textoPedidoGeneral{
+        /* font-size: 140%;
+        margin-left: 18%;
+        font-weight: bolder;
+        color: #ffffff;
+        text-shadow: 0px -1px 0.9px #837f7f, 1px 1px 0px #201d1d, 2px 1px 0px #000000; */
+
+        font-size: 140%;
+        margin-left: 10%;
+        margin-top: 3%;
+        font-weight: bolder;
+        color: #ffffff;
+        text-shadow: 0px -1px 0.9px #837f7f, 1px 1px 0px #201d1d, 2px 1px 0px #000000;
+    }
+
+    #subcont_Imagen_Pedidos_Enviados {
+        width: 85%;
+        margin-top: 5.5%;
+        /* margin-top: 8.5%; */
+    }    
+
+    #subcont_Texto_Pedidos_Enviados {
+        width: 100%;
+        margin-top: -14%;
+        /* width: 100%;
+        margin-top: -17%; */
+    }
+    
+
+    #subcont_Imagen_Pedidos_Entregados{
+        width: 85%;
+        margin-top: 4.5%;
+        /* margin-top: 8.5%; */
+    }
+    
+    #subcont_Texto_Pedidos_Entregados{
+        width: 100%;
+        margin-top: -14%;
+        /* margin-top: -17%; */
+    }
+
+    #subcont_Imagen_Pedidos_Cancelados{
+        width: 85%;
+        margin-top: 4.5%;
+        /* margin-top: 8.5%; */
+    }
+    
+    #subcont_Texto_Pedidos_Cancelados{
+        width: 100%;
+        margin-top: -14%;
+        /* margin-top: -17%; */
+    }
+    
+}
+
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation : portrait){
+    #Contenedor_Pedidos_General {
+        text-align: -webkit-center;
+        z-index: 1000;
+        margin-top: -70vh;
+    }
+
+    #subcont_Imagen_Pedidos_Enviados {
+        width: 85%;
+        margin-top: 5.5%;
+    }
+
+    #imagenPedidosGeneral {
+        overflow: hidden;
+        vertical-align: middle;
+        width: 75%;
+        height: auto;
+    }
+
+
+} 
+
+@media only screen and (device-aspect-ratio: 1024/768) and (orientation : portrait){
+    
+    #Contenedor_Pedidos_General {
+        text-align: -webkit-center;
+        z-index: 1000;
+        margin-top: -73vh;
+    }
+
+    #imagenPedidosGeneral {
+        overflow: hidden;
+        vertical-align: middle;
+        width: 75%;
+        height: auto;
+    }
+}
+
+/* @media only screen and (min-resolution: 132dpi) and (max-device-width: 1024px) and (orientation : portrait){
+    #Contenedor_Pedidos_General {
+        text-align: -webkit-center;
+        z-index: 1000;
+        margin-top: -72vh;
+    }
+    
+    #imagenPedidosGeneral {
+        overflow: hidden;
+        vertical-align: middle;
+        width: 100%;
+        height: auto;
+    }
+} */
+
+/* @media only screen and (device-aspect-ratio: 1024/768) and (orientation : portrait){
+    #imagenPedidosGeneral {
+        overflow: hidden;
+        vertical-align: middle;
+        width: 100%;
+        height: auto;
+    }
+}*/

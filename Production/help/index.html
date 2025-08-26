@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Video Tutoriales sobre la App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-container">
+        <div id="app">
+            <div class="borde-azul">Video tutoriales sobre la app</div>
+                <img src="assets/image_no_bg.png" alt="Botón de Cerrar" id="closeButton" class="image-button" />
+
+            <div class="container">
+                <div class="menu-container">
+                    <h3>Colocamiento de productos</h3>
+                    <ul>
+                        <li data-video="https://www.youtube.com/embed/KGYNdVbLxoc?autoplay=1&mute=1&loop=1&playlist=KGYNdVbLxoc&controls=1">Mobiliarios</li>
+                        <li data-video="https://www.youtube.com/embed/SsMnzs08nBY?autoplay=1&mute=1&loop=1&playlist=SsMnzs08nBY&controls=1">Cuadros</li>
+                        <li data-video="https://www.youtube.com/embed/UaZIgVs6oEc?autoplay=1&mute=1&loop=1&playlist=UaZIgVs6oEc&controls=1">Decoraciones para el piso</li>
+                        <li data-video="https://www.youtube.com/embed/kwsbn0piw2M?autoplay=1&mute=1&loop=1&playlist=kwsbn0piw2M&controls=1">Decoraciones para el techo</li>
+                    </ul>
+                    <h3>Texturizar superficies</h3>
+                    <ul>
+                         <li data-video="https://www.youtube.com/embed/UaZIgVs6oEc?autoplay=1&mute=1&loop=1&playlist=UaZIgVs6oEc&controls=1">Pisos</li>
+                        <li data-video="https://www.youtube.com/embed/kwsbn0piw2M?autoplay=1&mute=1&loop=1&playlist=kwsbn0piw2M&controls=1">Paredes</li>
+                    </ul>
+                </div>
+
+                <div class="video-player">
+                    <div class="video-container">
+                        <iframe id="youtubePlayer" class="youtube-iframe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="display: none;"></iframe>
+                        <div id="videoPlaceholder" class="video-placeholder">
+                            <span class="play-button">&#9658;</span>
+                        </div>
+                    </div>
+                    <div class="tutorial-text">
+                        <p class="title">Tutorial para la colocación del mobiliario.</p>
+                        <p class="subtitle">Pasos:</p>
+                        <ol>
+                            <li>Selecciona el mobiliario que deseas</li>
+                            <li>Se descargará el mobiliario</li>
+                            <li>Dale clic al espacio donde lo quieras colocar</li>
+                            <li>Gíralo</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="texto.js"></script>
+    <script src="hover.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map</title>
+
+    <!--Styles-->
+    <link rel="stylesheet/less" href="../style/buttons.less">
+    <link rel="stylesheet/less" href="../style/sweet-alert.less">
+    <link rel="stylesheet/less" href="../style/map.less">
+    <link rel="stylesheet/less" href="../style/text.less">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+
+    <!--General styles-->
+    <link rel="stylesheet/less" href="../style/buttons.less">
+    <link rel="stylesheet/less" href="../style/text.less">
+    <link rel="stylesheet/less" href="../style/inputs.less">
+    
+    <!--JS libraries-->
+    <script src="https://arvispace.com/lib/jquery/jquery.js"></script>
+    
+    <!--JS Bootstrap scripts-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://arvispace.com/lib/bootstrap/js/bootstrap.js"></script>
+
+    <!--Sweet alert libraries-->
+    <script src="https://arvispace.com/lib/sweet-alert/dist/sweetalert2.all.min.js"></script>
+
+    <!--Vue development-->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <!--Less style-->
+    <script src="https://cdn.jsdelivr.net/npm/less"></script>
+    
+    <!--Axios http request-->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    
+    <!--CSS libraries-->
+    <link rel="stylesheet" href="https://arvispace.com/lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://arvispace.com/lib/icons/index.css">
+    
+</head>
+<body>
+    <div id="map">
+        <component-map
+            :is60vh="listAdressIsActive"
+            @initial-position="initialPosition"
+        ></component-map>
+        <lis-address
+            :is-active="listAdressIsActive"
+            :address="address"
+            @close-list="closeListAddress"
+            @selected-address = "selectedAddress"
+            @change-input-address = "changeInputAddress"
+            @auto-complete-selected-address = "autoCompleteSelectedAddress"
+        ></lis-address>
+
+        <modal-tutorial
+        v-if="showModal" 
+        @close="showModal = false"
+        ></modal-tutorial>
+
+    </div>
+</body>
+
+<!--Scripts jquery to Vue-->
+<script src="../js/utils.js"></script>
+
+<!--Generañ components by Vue js-->
+<script src="../components/rounded-buttons.js"></script>
+<script src="../components/inputs.js"></script>
+
+<!--Components by vue-->
+<script src="../components/list-address.js"></script>
+<script src="../components/map.js"></script>
+<script src="../components/modaltutorial.js"></script>
+<!--Initialize App request and routes to services-->
+<script src="js/init.js"></script>
+
+</html>

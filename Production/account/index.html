@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+
+    <!--General styles-->
+    <link rel="stylesheet/less" href="../style/animations.less">
+    <link rel="stylesheet/less" href="../style/ar-anim.less">
+
+    <link rel="stylesheet" href="../style/css/buttons.css">
+    <link rel="stylesheet" href="../style/css/text.css">
+    <link rel="stylesheet" href="../style/css/inputs.css">
+    <link rel="stylesheet" href="../style/css/close.css">
+    <link rel="stylesheet" href="../style/css/carousel.css">
+    <link rel="stylesheet" href="../style/css/configuration.css">
+    <link rel="stylesheet" href="../style/css/pedidos.css">
+
+    <!--Styles-->
+    <link rel="stylesheet" href="../style/css/sweet-alert.css">
+    <link rel="stylesheet" href="../style/css/header.css">
+    <link rel="stylesheet" href="../style/css/side-menu.css">
+    <link rel="stylesheet" href="../style/css/account.css">
+    <link rel="stylesheet" href="../style/css/text.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
+    <link rel="stylesheet" href="../style/css/estilosImagenesPedidos.css">
+    <!-- <link rel="stylesheet" href="https://arvispace.com/lib/ImagenesPedidos/css/estilosImagenesPedidos.css"> -->
+
+    <!--JS libraries-->
+    <script src="https://arvispace.com/lib/jquery/jquery.js"></script>
+    
+    <!--JS Bootstrap scripts-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://arvispace.com/lib/bootstrap/js/bootstrap.js"></script>
+
+    <!--Sweet alert libraries-->
+    <script src="https://arvispace.com/lib/sweet-alert/dist/sweetalert2.all.min.js"></script>
+    <!--Vue development-->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <!--Less style-->
+    <script src="https://cdn.jsdelivr.net/npm/less"></script>
+
+    <!--Axios http request-->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    
+    <!--CSS libraries-->
+    <link rel="stylesheet" href="https://arvispace.com/lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://arvispace.com/lib/icons/index.css">
+
+
+
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1,minimal-ui" name="viewport">
+   
+   
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic|Material+Icons">
+   
+   <!---
+    <link rel="stylesheet" href="https://unpkg.com/vue-material/dist/vue-material.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/vue-material/dist/theme/default.css">
+    -->
+
+
+    
+</head>
+<body>
+
+
+    <div id="account">
+
+        <side-menu-container
+            v-bind:is-active="sideMenuIsActive"
+            @set-side-menu="setSideMenu"
+            :options="
+                [{titulo:'Mi carrito',icon:'icon-carrito2', url:'uniwebview://open-cart'},
+                {titulo:'Volver a camara',icon:'icon-modelo-3d-con-AR', url:'uniwebview://close'}]"
+        ></side-menu-container>
+        <account
+            :initialize="initialize"
+            :pedidos="pedidos"
+        ></account>
+    </div>
+</body>
+
+
+
+
+<style >
+    .md-card {
+      width: 320px;
+      margin: 4px;
+      display: inline-block;
+      vertical-align: top;
+    };
+    .cardb {
+    align-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+     };
+  </style>
+  
+<!-- <script src="https://arvispace.com/lib/ImagenesPedidos/prueba.js"></script> -->
+<!--
+<script src="https://unpkg.com/vue"></script>
+<script src="https://unpkg.com/vue-material"></script>
+-->
+<!--Scripts jquery to Vue-->
+<script src="../js/utils.js"></script>
+
+<!--General components-->
+<script src="../components/rounded-buttons.js"></script>
+<script src="../components/header.js"></script>
+<script src="../components/image-to-carousel.js"></script>
+<script src="../components/side-menu.js"></script>
+<script src="../components/close-container.js"></script>
+<script src="../components/carousel.js"></script>
+<script src="../components/buttons.js"></script>
+
+<!--Components to account-->
+<script src="../components/configuration.js"></script>
+<script src="../components/pedidos.js"></script>
+<script src="../components/account.js"></script>
+<!--<script src="../components/account.js"></script>-->
+<!--Initialize App request and routes to services-->
+<script src="js/init.js"></script>
+
+</html>

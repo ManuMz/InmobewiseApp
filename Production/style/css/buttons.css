@@ -1,0 +1,122 @@
+.roudend-button {
+  text-align: center;
+  height: 60px;
+  width: 60px;
+  padding: 0;
+  line-height: 60px;
+  border-radius: 50%;
+  outline: none;
+  position: relative;
+  font-size: 1.5rem;
+  /*border: #ed1c24 solid 2px;*/
+  border: #210607 solid 2px;
+  background-color: #fff;
+  /*color: #ed1c24;*/
+ color: #1f1818;
+}
+.roudend-button.center {
+  text-align: center;
+  height: 60px;
+  width: 60px;
+  padding: 0;
+  line-height: 60px;
+  border-radius: 50%;
+  outline: none;
+  position: relative;
+  left: calc(50% - 30px);
+}
+.roudend-button.sm {
+  text-align: center;
+  height: 20px;
+  width: 20px;
+  padding: 0;
+  line-height: 20px;
+  border-radius: 50%;
+  outline: none;
+  position: relative;
+}
+.roudend-button.md {
+  text-align: center;
+  height: 30px;
+  width: 30px;
+  padding: 0;
+  line-height: 30px;
+  border-radius: 50%;
+  outline: none;
+  position: relative;
+  font-size: 0.8rem;
+}
+.roudend-button.lg {
+  text-align: center;
+  height: 40px;
+  width: 40px;
+  padding: 0;
+  line-height: 40px;
+  border-radius: 50%;
+  outline: none;
+  position: relative;
+}
+.roudend-button.xl {
+  text-align: center;
+  height: 50px;
+  width: 50px;
+  padding: 0;
+  line-height: 50px;
+  border-radius: 50%;
+  outline: none;
+  position: relative;
+}
+.roudend-button.top-end {
+  text-align: center;
+  height: 30px;
+  width: 30px;
+  padding: 0;
+  line-height: 0px;
+  border-radius: 50%;
+  outline: none;
+  position: relative;
+  font-size: 1rem;
+  /* float: right; */
+  position: absolute;
+  right: 0;
+  top: -5px;
+  z-index: 10;
+}
+.btn {
+  position: relative !important;
+  text-transform: uppercase !important;
+  -webkit-transition: all 0.15s ease !important;
+  transition: all 0.15s ease !important;
+  will-change: transform !important;
+  letter-spacing: 0.025em !important;
+  font-size: 0.875rem !important;
+  height: 50px;
+  /*border-radius: 50px !important;*/
+  border-radius: 10px !important;
+}
+.btn-primary {
+  color: #fff !important;
+  border: #ed1c24 solid 1px !important;
+  background-color: #ed1c24 !important;
+  font-weight: bold !important;
+}
+.btn-secondary{
+  color: rgb(255, 255, 255) !important;
+  background-color: rgb(0, 0, 0) !important;
+  border-color: transparent !important;
+}
+button:focus {
+  outline: 0 !important;
+}
+button:focus {
+  outline: 0 !important;
+}
+.btn-primary.focus,
+.btn-primary:focus {
+  box-shadow: 0 0 0 0rem rgba(38, 143, 255, 0.5) !important;
+}
+.btn.focus,
+.btn:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0rem rgba(0, 123, 255, 0.25) !important;
+}

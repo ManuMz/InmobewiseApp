@@ -1,0 +1,269 @@
+  .anim__container{
+
+    .cw1{
+      animation: animation2 10s infinite linear;
+      .img1{
+        animation: front 10s infinite linear;
+      }
+    }
+
+    .cw2{
+      animation: animation2 10s 2s infinite linear;
+      
+      .img2{
+        animation: front 10s 2s infinite linear;
+      }
+    }
+
+    .cw3{
+      animation: animation2 10s 4s infinite linear;
+      .img3{
+        animation: front 10s 4s infinite linear;
+      }
+    }
+
+    #spheres, #spheres1, #spheres2 {
+      transform: perspective(100px) translate3D(178px, 215px, 104px) scale(0.6);
+
+      #sphere_one, #sphere1_one_1_, #sphere2_one_1_ {
+        animation-name: animation1;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+
+      #sphere_two,#sphere1_two_1_, #sphere2_two_1_{
+        animation-name: animation1;
+        animation-duration: 5s;
+        animation-direction: reverse;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+
+      #sphere_three,#sphere1_three_1_, #sphere2_three_1_ {
+        animation-name: animation1;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+
+      #sphere_four,#sphere1_four_1_, #sphere2_four_1_ {
+        animation-name: animation1;
+        animation-duration: 9s;
+        animation-direction: reverse;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in;
+      }
+
+      #sphere_five,#sphere1_five_1_, #sphere2_five_1_ {
+        animation-name: animation1;
+        animation-duration: 11s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+
+      #sphere_six,#sphere1_six_1_, #sphere2_six_1_ {
+        animation-name: animation1;
+        animation-duration: 13s;
+        animation-direction: reverse;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+
+      #sphere_seven,#sphere1_seven_1_, #sphere2_seven_1_ {
+        animation-name: animation1;
+        animation-duration: 15s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+
+      #sphere_eight,#sphere1_eight_1_, #sphere2_eight_1_{
+        animation-name: animation1;
+        animation-duration: 17s;
+        animation-direction: reverse;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+
+      #sphere_nine,#sphere1_nine_1_, #sphere2_nine_1_ {
+        animation-name: animation1;
+        animation-duration: 19s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+
+      #sphere_ten,#sphere1_ten_1_, #sphere2_ten_1_ {
+        animation-name: animation1;
+        animation-duration: 21s;
+        animation-direction: reverse;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+
+      #sphere_eleven,#sphere1_eleven_1_, #sphere2_eleven_1_ {
+        animation-name: animation1;
+        animation-duration: 23s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+
+      #sphere_twelve,#sphere1_twelve_1_, #sphere2_twelve_1_ {
+        animation-name: animation1;
+        animation-duration: 25s;
+        animation-direction: reverse;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+
+      #sphere_thirteen,#sphere1_thirteen_1_, #sphere2_thirteen_1_ {
+        animation-name: animation1;
+        animation-duration: 27s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+    }
+
+    #user {
+      animation-name: move;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate-reverse;
+      animation-timing-function: ease-in-out;
+
+
+      #person {
+        padding-bottom: 15rem;
+        // transform: perspective(100px) translate3D(64px, 140px, 104px) rotate3d(1, 0, 0, 45deg) scale(0.8);
+        animation-name: levitar;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+        animation-timing-function: ease-in-out;
+      }
+    }
+  }
+
+
+
+@keyframes animation1 {
+  0%{
+    
+    transform: translate3d(202px, 229px, -374px) rotate3d(0, 0, 1, 0deg);
+    -moz-transform: translate3d(202px, 229px, -374px) rotate3d(0, 0, 1, 0deg);
+    -o-transform: translate3d(202px, 229px, -374px) rotate3d(0, 0, 1, 0deg);
+    -ms-transform: translate3d(202px, 229px, -374px) rotate3d(0, 0, 1, 0deg);
+    -webkit-transform: translate3d(202px, 229px, -374px) rotate3d(0, 0, 1, 0deg);
+  }
+  100%{
+    transform: translate3d(202px, 229px, -374px) rotate3d(0, 0, 1, 360deg);
+    -moz-transform: translate3d(202px, 229px, -374px) rotate3d(0, 0, 1, 360deg);
+    -o-transform: translate3d(202px, 229px, -374px) rotate3d(0, 0, 1, 360deg);
+    -ms-transform: translate3d(202px, 229px, -374px) rotate3d(0, 0, 1, 360deg);
+    -webkit-transform: translate3d(202px, 229px, -374px) rotate3d(0, 0, 1, 360deg);
+  }
+
+}
+
+@keyframes animation2{
+  0%{
+   
+    transform:perspective(500px) translate3d(0,0, -374px)  rotate3d(0,0,0,0deg);
+    -moz-transform:perspective(500px) translate3d(0,0, -374px)  rotate3d(0, 1, 0, 0deg);
+    -o-transform:perspective(500px) translate3d(0,0, -374px) rotate3d(0, 1, 0, 0deg);
+    -ms-transform:perspective(500px) translate3d(0,0, -374px) rotate3d(0, 1, 0, 0deg);
+    -webkit-transform:perspective(500px) translate3d(0,0, -374px)  rotate3d(0, 1, 0, 0deg);
+    z-index: -10;
+  }
+  25%{
+    
+    z-index: -10;
+  }
+  75%{
+    z-index: 10;
+  }
+  100%{
+    z-index: 10;
+    transform: perspective(500px) translate3d(0,0, -374px) rotate3d(0, 1, 0, 360deg);
+    -moz-transform:perspective(500px) translate3d(0,0, -374px) rotate3d(0, 1, 0, 360deg);
+    -o-transform: perspective(500px) translate3d(0,0, -374px) rotate3d(0, 1, 0, 360deg);
+    -ms-transform:perspective(500px) translate3d(0,0, -374px) rotate3d(0, 1, 0, 360deg);
+    -webkit-transform:perspective(500px) translate3d(0,0, -374px) rotate3d(0, 1, 0, 360deg);
+  }
+}
+
+@keyframes front {
+
+  from{
+    transform: translate3d(0,0,100px) rotateY(360deg);
+  }
+   
+  to{
+    transform: translate3d(0,0,100px) rotateY(0deg);
+  }
+
+}
+
+
+
+
+@keyframes levitar {
+  from {
+    transform: translate3d(0px, 0%, 0px)
+  }
+
+  to {
+    transform: translate3d(0px, -5vh, 0px)
+  }
+}
+
+
+
+@keyframes move {
+  0% {
+    transform: translate3d(0px, 40px, 0px);
+    -moz-transform: translate3d(0px,40,0px);
+    -o-transform: translate3d(0px,40,0px);
+    -ms-transform: translate3d(0px,40,0px);
+    -webkit-transform: translate3d(0px,40,0px);
+  }
+
+  25% {
+    transform: translate3d(40px, 0px, 0px);
+    -moz-transform: translate3d(40px, 0px, 0px);
+    -o-transform: translate3d(40px, 0px, 0px);
+    -ms-transform: translate3d(40px, 0px, 0px);
+    -webkit-transform: translate3d(40px, 0px, 0px);
+    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.524));
+  }
+
+  50% {
+    transform: translate3d(0px, -40px, 0px);
+    -moz-transform: translate3d(0px,-40,0px);
+    -o-transform: translate3d(0px,-40,0px);
+    -ms-transform: translate3d(0px,-40,0px);
+    -webkit-transform: translate3d(0px,-40,0px);
+  }
+
+  100% {
+    transform: translate3d(40px, 0px, 0px);
+    -moz-transform: translate3d(40px, 0px, 0px);
+    -o-transform: translate3d(40px, 0px, 0px);
+    -ms-transform: translate3d(40px, 0px, 0px);
+    -webkit-transform: translate3d(40px, 0px, 0px);
+    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.524));
+  }
+
+}
+
+/*Animations*/
+/*Animations to item producto*/
+.slide-enter-active {
+  transition: all .4s ease-in-out;
+}
+.slide-leave-active {
+  transition: all .4s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slide-enter, .slide-leave-to
+  /* .slide-fade-leave-active below version 2.1.8 */ {
+  transform: translateY(100%);
+}

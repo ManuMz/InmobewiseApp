@@ -1,0 +1,91 @@
+    .wrap-input{
+        margin-bottom: 10px !important;
+    }
+    input{
+        height: 50px;
+        border-radius: 10px;
+        padding: 0 15px 0 15px;
+        display: block;
+        width: 100%;
+        background: rgb(255 255 255 / 80%);
+        font-size: 15px;
+        line-height: 1.5;
+        color: #666666;
+        outline: none;
+        border: none;
+    }
+    label.error{
+        margin-left: 15px;
+        color: red;
+    }
+    input.error{
+        border: .1rem solid red;
+    }
+    select.error{
+        border: .1rem solid red;
+    }
+    select{
+        
+        height: 50px;
+        border-radius: 25px;
+        padding: 0 15px 0 15px;
+        display: block;
+        width: 100%;
+        background: rgb(255 255 255 / 30%);
+        font-size: 15px;
+        line-height: 1.5;
+        color: #666666;
+        outline: none;
+        border: none;
+
+        display: inline-block;
+        line-height: 1.5em;
+        padding: 0.5em 3.5em 0.5em 1em;
+
+        margin: 0;      
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background-image: linear-gradient(45deg, transparent 50%, gray 50%), linear-gradient(135deg, gray 50%, transparent 50%), radial-gradient(#ddd 70%, transparent 72%);
+        background-position: calc(100% - 20px) calc(1em + 7px), calc(100% - 15px) calc(1em + 7px), calc(100% - .5em) .8em;
+        background-size: 5px 5px, 5px 5px, 1.5em 1.5em;
+        background-repeat: no-repeat;
+    }
+    .wrap-input-number{
+        display: flex !important;    
+        margin-bottom: 10px !important;
+        width: 100% !important;
+        
+        input[type=text]{
+            height: 30px;
+            border-radius: 25px;
+            padding: 0 15px 0 15px;
+            width: 40%;
+            background: rgb(255 255 255 / 30%);
+            font-size: 15px;
+            line-height: 1.5;
+            color: #666666;
+            outline: none;
+            border: none;
+            margin-left: 10px !important;
+            margin-right: 10px !important;
+        }
+    }
+
+    input::before{
+        
+        display: block;
+        position: absolute;
+        border-radius: 25px;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        box-shadow: 0px 0px 0px 0px;
+        color: rgba(15, 15, 25, 0.5);
+    
+    }
+

@@ -1,0 +1,2746 @@
+/* imagen de fondo del login*/
+
+
+
+.bodyLogin{
+  width:100%;
+  height:100vh;
+  background-image: url('https://arvispace.com/lib/ImagenesPedidos/fondos/fondo-login.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: inherit;
+}
+
+
+/*poner la sombra de la imagen*/
+.bodyLogin:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.3);
+} 
+
+.container-fluidLogin {
+  width:30%;
+  height: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: auto;
+  margin-left: 35%;
+  margin-top: 5%;
+  position: absolute;
+  border: 2px;
+  border-width: 1px;
+  border-style: groove;
+  box-shadow: 0px 0px 3px #fff;
+  border-radius: 5px;
+}
+
+.container-fluidLogin:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.3);
+}
+
+#imagenLogo{
+  border-style: none;
+  width: 50%;
+  margin-top: 10%;
+  margin: 18px auto;
+  display: block;
+  -webkit-filter: blur(0px);
+  filter: blur(0px);
+  
+}
+ 
+
+
+.container-fluidSMS{
+  width: 30%;
+  height: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: auto;
+  margin-left: 35%;
+  margin-top: 15%;
+  position: absolute;
+  border: 2px;
+  border-width: 1px;
+  border-style: groove;
+  box-shadow: 0px 0px 3px #fff;
+  border-radius: 5px;
+}
+
+
+.container-fluidSMS:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.3);
+}
+
+.container-fluidReset{
+  width: 30%;
+  height: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: auto;
+  margin-left: 35%;
+  margin-top: 12%;
+  position: absolute;
+  border: 2px;
+  border-width: 1px;
+  border-style: groove;
+  box-shadow: 0px 0px 3px #fff;
+  border-radius: 5px;
+}
+
+.container-fluidReset:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.3);
+}
+
+.container-fluidRegistro{
+  width: 30%;
+  height: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: auto;
+  margin-left: 35%;
+  margin-top: 0.5%;
+  position: absolute;
+  border: 2px;
+  border-width: 1px;
+  border-style: groove;
+  box-shadow: 0px 0px 3px #fff;
+  border-radius: 5px; 
+}
+
+
+.container-fluidRegistro:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.3);
+}
+.textoLogin{
+  color: #ffffff;
+  font-weight: 600;
+  -webkit-filter: blur(0px);
+  filter: blur(0px);
+}
+
+.subtextoLogin{
+  color: #00e7fffa;
+  text-decoration: underline;
+  -webkit-filter: blur(0px);
+  filter: blur(0px);
+}
+/*botones de Login Principal*/
+
+#botonesIniciarSesion{
+  width: 100%;
+  margin-bottom: 1%;
+  margin-top: 8%;margin-bottom: 5%;-webkit-filter: blur(0px);filter: blur(0px);
+}
+
+#botonIniciarTelefono{
+  width: 100%;
+  margin-bottom: 1%;
+  margin-top: 8%;margin-bottom: 5%;-webkit-filter: blur(0px);filter: blur(0px);
+}
+
+#botonRegistrarse{
+  width: 100%;
+  margin-bottom: 1%;
+  margin-top: 8%;margin-bottom: 5%;-webkit-filter: blur(0px);filter: blur(0px);
+}
+
+#botonSalir{
+  width: 100%;
+  margin-bottom: 1%;
+  margin-top: 8%;margin-bottom: 5%;-webkit-filter: blur(0px);filter: blur(0px);
+}
+
+.ios-btn-primary{
+  width: 100%;  
+  margin-top:2%;
+
+}
+
+
+
+@media only screen and (max-width : 1200px) { /*ipad pro*/
+
+  .container-fluidLogin {
+    width: 60%;
+    height: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: 20%;
+    margin-top: 30%;
+    position: absolute;
+    border: 2px;
+    border-width: 1px;
+    border-style: groove;
+    box-shadow: 0px 0px 3px #fff;
+    border-radius: 5px;
+  }
+
+  .container-fluidLogin:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.3);
+  }
+
+  .textoLogin {
+    font-size: 85%;
+    color: #ffffff;
+    font-weight: 600;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+  }
+
+  #imagenLogo {
+    border-style: none;
+    width: 75%;
+    margin-top: 10%;
+    margin: 18px auto;
+    display: block;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+  }
+
+  /*contenido reset password*/
+  .container-fluidReset {
+    width: 70%;
+    height: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: 15%;
+    margin-top: 25%;
+    position: absolute;
+    border: 2px;
+    border-width: 1px;
+    border-style: groove;
+    box-shadow: 0px 0px 3px #fff;
+    border-radius: 5px;
+  }
+
+  .container-fluidReset:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.3);
+      /* background-color: rgba(0,0,0,0.3); */
+  }
+
+
+  /*contenido reset password*/
+  .container-fluidRegistro {
+    width: 70%;
+    height: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: 15%;
+    margin-top: 20%;
+    position: absolute;
+    border: 2px;
+    border-width: 1px;
+    border-style: groove;
+    box-shadow: 0px 0px 3px #fff;
+    border-radius: 5px;
+  }
+
+  .container-fluidRegistro:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.3);
+      /* background-color: rgba(0,0,0,0.3); */
+  }
+
+  
+  /*contenido de registro sms*/
+  .container-fluidSMS{
+    width: 70%;
+    height: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: 15%;
+    margin-top: 35%;
+    position: absolute;
+    border: 2px;
+    border-width: 1px;
+    border-style: groove;
+    box-shadow: 0px 0px 3px #fff;
+    border-radius: 5px;
+  }
+
+  .container-fluidSMS:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.3);
+      /* background-color: rgba(0,0,0,0.3); */
+  }
+
+}
+
+
+@media only screen and (max-width: 1024px) and (orientation : landscape) {
+	/* LANDSCAPE:
+	Apple iPad 1,2,3,4,Air,Mini
+	BlackBerry PlayBook
+	Samsung Galaxy Tab 2(7") */
+
+  .bodyLogin{
+    width:100%;
+    height:100vh;
+    background-image: url('https://arvispace.com/lib/ImagenesPedidos/fondos/fondo-login.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: inherit;
+  }
+
+  .container-fluidLogin {
+    width: 40%;
+    height: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: 30%;
+    margin-top: 1%;
+    position: absolute;
+    border: 2px;
+    border-width: 1px;
+    border-style: groove;
+    box-shadow: 0px 0px 3px #fff;
+    border-radius: 5px;
+  }
+
+  .container-fluidLogin:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.3);
+  }
+
+  .container-fluidSMS {
+    width: 40%;
+    height: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: 30%;
+    margin-top: 10%;
+    position: absolute;
+    border: 2px;
+    border-width: 1px;
+    border-style: groove;
+    box-shadow: 0px 0px 3px #fff;
+    border-radius: 5px;
+  }
+
+  .container-fluidSMS:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.3);
+      /* background-color: rgba(0,0,0,0.3); */
+  }
+
+  .container-fluidReset {
+    width: 40%;
+    height: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: 30%;
+    margin-top: 10%;
+    position: absolute;
+    border: 2px;
+    border-width: 1px;
+    border-style: groove;
+    box-shadow: 0px 0px 3px #fff;
+    border-radius: 5px;
+  }
+
+  .container-fluidReset:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.3);
+      /* background-color: rgba(0,0,0,0.3); */
+  }
+
+
+  .container-fluidRegistro {
+    width: 40%;
+    height: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: 30%;
+    margin-top: 1%;
+    position: absolute;
+    border: 2px;
+    border-width: 1px;
+    border-style: groove;
+    box-shadow: 0px 0px 3px #fff;
+    border-radius: 5px;
+  }
+
+
+  .container-fluidRegistro:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.3);
+      /* background-color: rgba(0,0,0,0.3); */
+  }
+
+  .container-fluidRegistro .form input{
+    width: 48%;
+    height: 40px;
+    font-size: 66%;
+    float: left;
+    margin-top: 2%;
+    margin-bottom: 4%;
+    margin-left: 2%;
+  }
+
+  #imagenLogo {
+    border-style: none;
+    width: 56%;
+    margin-top: 10%;
+    margin: 18px auto;
+    display: block;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+  }
+
+  .container-fluidRegistro .roudend-button{
+    display: none;
+  }
+
+
+}
+
+
+
+
+
+@media only screen and (max-width : 979px) {/*ipad*/
+
+  .container-fluidLogin {
+    width: 70%;
+    height: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: 15%;
+    margin-top: 24%;
+    position: absolute;
+    border: 2px;
+    border-width: 1px;
+    border-style: groove;
+    box-shadow: 0px 0px 3px #fff;
+    border-radius: 5px;
+  }
+
+  .container-fluidLogin:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.3);
+  }
+
+  .textoLogin {
+    font-size: 85%;
+    color: #ffffff;
+    font-weight: 600;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+  }
+
+  #imagenLogo {
+    border-style: none;
+    width: 75%;
+    margin-top: 10%;
+    margin: 18px auto;
+    display: block;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+  }
+
+  /*contenido reset password*/
+  .container-fluidReset {
+    width: 70%;
+    height: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: 15%;
+    margin-top: 25%;
+    position: absolute;
+    border: 2px;
+    border-width: 1px;
+    border-style: groove;
+    box-shadow: 0px 0px 3px #fff;
+    border-radius: 5px;
+  }
+
+  .container-fluidReset:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.3);
+      /* background-color: rgba(0,0,0,0.3); */
+  }
+
+
+  /*contenido reset password*/
+  .container-fluidRegistro {
+    width: 70%;
+    height: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: 15%;
+    margin-top: 14%;
+    position: absolute;
+    border: 2px;
+    border-width: 1px;
+    border-style: groove;
+    box-shadow: 0px 0px 3px #fff;
+    border-radius: 5px;
+  }
+
+  .container-fluidRegistro:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.3);
+      /* background-color: rgba(0,0,0,0.3); */
+  }
+
+  /*contenido de registro sms*/
+  .container-fluidSMS{
+    width: 70%;
+    height: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: 15%;
+    margin-top: 35%;
+    position: absolute;
+    border: 2px;
+    border-width: 1px;
+    border-style: groove;
+    box-shadow: 0px 0px 3px #fff;
+    border-radius: 5px;
+  }
+
+  .container-fluidSMS:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.3);
+      /* background-color: rgba(0,0,0,0.3); */
+  }
+
+}
+
+@media only screen and (max-width: 824px) and (orientation : landscape) {
+
+  .container-fluidLogin {
+    width: 35%;
+    height: 98%;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: 32.5%;
+    margin-top: 1vh;
+    position: absolute;
+    border: 2px;
+    border-width: 1px;
+    border-style: groove;
+    box-shadow: 0px 0px 3px #fff;
+    border-radius: 5px;
+  }
+  
+  .container-fluidLogin:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.3);
+  }
+
+  #botonesIniciarSesion {
+    width: 100%;
+    height: 35px;
+    margin-bottom: 1%;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+  }
+
+  #botonIniciarTelefono{
+    width: 100%;
+    height: 35px;
+    margin-bottom: 1%;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+  }
+
+  #botonRegistrarse{
+    width: 100%;
+    height: 35px;
+    margin-bottom: 1%;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+  }
+
+  #botonSalir{
+    width: 100%;
+    height: 35px;
+    margin-bottom: 1%;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+  }
+
+  .container-fluidLogin .form input{
+    height: 33px;
+    width: 100%;
+    font-size: 79%;
+  }
+
+  .container-fluidLogin button{
+    height: 35px;
+    width: 100%;
+    font-size: 79%;
+  }
+
+
+  .textoLogin {
+    font-size: 70%;
+    color: #ffffff;
+    font-weight: 600;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+  }
+
+  #imagenLogo {
+    border-style: none;
+    width: 52%;
+    margin-top: 6%;
+    margin: 5px auto;
+    display: block;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+  }
+
+  /*contenido reset password*/
+  .container-fluidReset {
+    width: 35%;
+    height: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: 32.5%;
+    margin-top: 11vh;
+    position: absolute;
+    border: 2px;
+    border-width: 1px;
+    border-style: groove;
+    box-shadow: 0px 0px 3px #fff;
+    border-radius: 5px;
+}
+
+  .container-fluidReset:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.3);
+      /* background-color: rgba(0,0,0,0.3); */
+  }
+  
+  .container-fluidReset .form input{
+    height: 33px;
+    width: 100%;
+    font-size: 79%;
+  }
+
+  .container-fluidReset button{
+    height: 35px;
+    width: 100%;
+    font-size: 79%;
+  }
+
+
+  /*contenido reset Registro*/
+  .container-fluidRegistro {
+    width: 32%;
+    height: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: 35%;
+    margin-top: 0vh;
+    position: absolute;
+    border: 2px;
+    border-width: 1px;
+    border-style: groove;
+    box-shadow: 0px 0px 3px #fff;
+    border-radius: 5px;
+  }
+
+  .container-fluidRegistro:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.3);
+      /* background-color: rgba(0,0,0,0.3); */
+  }
+
+  .container-fluidRegistro .form input {
+    width: 48%;
+    height: 40px;
+    font-size: 66%;
+    float: left;
+    margin-top: 2%;
+    margin-bottom: 4%;
+    margin-left: 2%;
+  }
+
+  .container-fluidRegistro #imagenLogo {
+    border-style: none;
+    width: 60%;
+    margin-top: 10%;
+    margin: 14px auto;
+    display: block;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+  }
+
+  .container-fluidRegistro button {
+    width: 100%;
+    height: 35px;
+    font-size: 66%;
+  }
+
+  .form input{
+    width: 100%;
+    height: 35px;
+  }
+
+
+  /*contenido de registro sms*/
+  .container-fluidSMS {
+    width: 40%;
+    height: 81vh;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: 30%;
+    margin-top: 10vh;
+    position: absolute;
+    border: 2px;
+    border-width: 1px;
+    border-style: groove;
+    box-shadow: 0px 0px 3px #fff;
+    border-radius: 5px;
+  }
+
+  .container-fluidSMS:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.3);
+      /* background-color: rgba(0,0,0,0.3); */
+  }
+}
+
+
+
+
+@media only screen and (max-width : 767px) { /*este es de la tablet tabs s7 con la que compilamos*/
+
+  .container-fluidLogin {
+    width: 70%;
+    height: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: 15%;
+    /* margin-top: 30%; */
+    margin-top:16vh;
+    position: absolute;
+    border: 2px;
+    border-width: 1px;
+    border-style: groove;
+    box-shadow: 0px 0px 3px #fff;
+    border-radius: 5px;
+  }
+  
+  .container-fluidLogin:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.3);
+  }
+
+  .textoLogin {
+    font-size: 85%;
+    color: #ffffff;
+    font-weight: 600;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+  }
+
+  #imagenLogo {
+    border-style: none;
+    width: 75%;
+    margin-top: 10%;
+    margin: 18px auto;
+    display: block;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+  }
+
+  /*contenido reset password*/
+  .container-fluidReset {
+    width: 70%;
+    height: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: 15%;
+    /* margin-top: 30%; */
+    margin-top:16vh;
+    position: absolute;
+    border: 2px;
+    border-width: 1px;
+    border-style: groove;
+    box-shadow: 0px 0px 3px #fff;
+    border-radius: 5px;
+  }
+
+  .container-fluidReset:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.3);
+      /* background-color: rgba(0,0,0,0.3); */
+  }
+
+
+  /*contenido reset Registro*/
+  .container-fluidRegistro {
+    width: 70%;
+    height: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: 15%;
+    /* margin-top: 30%; */
+    margin-top:16vh;
+    position: absolute;
+    border: 2px;
+    border-width: 1px;
+    border-style: groove;
+    box-shadow: 0px 0px 3px #fff;
+    border-radius: 5px;
+  }
+
+  .container-fluidRegistro:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.3);
+      /* background-color: rgba(0,0,0,0.3); */
+  }
+
+  .form input{
+    width: 100%;
+    height: 45px;
+  }
+
+
+  /*contenido de registro sms*/
+  .container-fluidSMS{
+    width: 70%;
+    height: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: 15%;
+    /* margin-top: 30%; */
+    margin-top:16vh;
+    position: absolute;
+    border: 2px;
+    border-width: 1px;
+    border-style: groove;
+    box-shadow: 0px 0px 3px #fff;
+    border-radius: 5px;
+  }
+
+  .container-fluidSMS:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.3);
+      /* background-color: rgba(0,0,0,0.3); */
+  }
+
+}
+
+@media only screen and (max-width: 766px) and (orientation : landscape) {
+
+  .container-fluidLogin {
+    width: 35%;
+    height: 98%;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: 32.5%;
+    margin-top: 1vh;
+    position: absolute;
+    border: 2px;
+    border-width: 1px;
+    border-style: groove;
+    box-shadow: 0px 0px 3px #fff;
+    border-radius: 5px;
+  }
+  
+  .container-fluidLogin:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.3);
+  }
+
+  #botonesIniciarSesion {
+    width: 100%;
+    height: 35px;
+    margin-bottom: 1%;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+  }
+
+  #botonIniciarTelefono{
+    width: 100%;
+    height: 35px;
+    margin-bottom: 1%;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+  }
+
+  #botonRegistrarse{
+    width: 100%;
+    height: 35px;
+    margin-bottom: 1%;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+  }
+
+  #botonSalir{
+    width: 100%;
+    height: 35px;
+    margin-bottom: 1%;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+  }
+
+  .container-fluidLogin .form input{
+    height: 33px;
+    width: 100%;
+    font-size: 79%;
+  }
+
+  .container-fluidLogin button{
+    height: 35px;
+    width: 100%;
+    font-size: 79%;
+  }
+
+
+  .textoLogin {
+    font-size: 70%;
+    color: #ffffff;
+    font-weight: 600;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+  }
+
+  #imagenLogo {
+    border-style: none;
+    width: 52%;
+    margin-top: 6%;
+    margin: 5px auto;
+    display: block;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+  }
+
+  /*contenido reset password*/
+  .container-fluidReset {
+    width: 45%;
+    height: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: 27.5%;
+    /* margin-top: 30%; */
+    margin-top: 11vh;
+    position: absolute;
+    border: 2px;
+    border-width: 1px;
+    border-style: groove;
+    box-shadow: 0px 0px 3px #fff;
+    border-radius: 5px;
+  }
+
+  .container-fluidReset:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.3);
+      /* background-color: rgba(0,0,0,0.3); */
+  }
+  
+  .container-fluidReset .form input{
+    height: 33px;
+    width: 100%;
+    font-size: 79%;
+  }
+
+  .container-fluidReset button{
+    height: 35px;
+    width: 100%;
+    font-size: 79%;
+  }
+
+
+  /*contenido reset Registro*/
+  .container-fluidRegistro {
+    width: 43%;
+    height: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: 30%;
+    /* margin-top: 30%; */
+    margin-top: 1vh;
+    position: absolute;
+    border: 2px;
+    border-width: 1px;
+    border-style: groove;
+    box-shadow: 0px 0px 3px #fff;
+    border-radius: 5px;
+  }
+
+  .container-fluidRegistro:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.3);
+      /* background-color: rgba(0,0,0,0.3); */
+  }
+
+  .container-fluidRegistro .form input {
+    width: 48%;
+    height: 40px;
+    font-size: 66%;
+    float: left;
+    margin-top: 2%;
+    margin-bottom: 4%;
+    margin-left: 2%;
+  }
+
+  .container-fluidRegistro #imagenLogo {
+    border-style: none;
+    width: 60%;
+    margin-top: 10%;
+    margin: 14px auto;
+    display: block;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+  }
+
+  .container-fluidRegistro button {
+    width: 100%;
+    height: 35px;
+    font-size: 66%;
+  }
+
+  .form input{
+    width: 100%;
+    height: 35px;
+  }
+
+
+  /*contenido de registro sms*/
+  .container-fluidSMS{
+    width: 70%;
+    height: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: 15%;
+    /* margin-top: 30%; */
+    margin-top:16vh;
+    position: absolute;
+    border: 2px;
+    border-width: 1px;
+    border-style: groove;
+    box-shadow: 0px 0px 3px #fff;
+    border-radius: 5px;
+  }
+
+  .container-fluidSMS:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.3);
+      /* background-color: rgba(0,0,0,0.3); */
+  }
+
+}
+
+@media only screen and (max-width: 720px) and (orientation : landscape) {
+	/*LANDSCAPE:
+	Nexus 7
+	HTC Evo 3D  980px*/
+
+  .container-fluidLogin {
+    width: 40%;
+    height: 98vh;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: 30%;
+    margin-top: 0vh;
+    position: absolute;
+    border: 2px;
+    border-width: 1px;
+    border-style: groove;
+    box-shadow: 0px 0px 3px #fff;
+    border-radius: 5px;
+  }
+
+  .container-fluidLogin:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.3);
+  }
+
+
+  .container-fluidReset {
+    width: 40%;
+    height: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: 30%;
+    margin-top: 15vh;
+    position: absolute;
+    border: 2px;
+    border-width: 1px;
+    border-style: groove;
+    box-shadow: 0px 0px 3px #fff;
+    border-radius: 5px;
+  }
+
+  .container-fluidReset:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.3);
+  }
+
+  .container-fluidRegistro {
+    width: 40%;
+    height: 99vh;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: 30%;
+    margin-top: 1vh;
+    position: absolute;
+    border: 2px;
+    border-width: 1px;
+    border-style: groove;
+    box-shadow: 0px 0px 3px #fff;
+    border-radius: 5px;
+  }
+
+  .container-fluidRegistro .form input {
+    width: 48%;
+    height: 40px;
+    font-size: 66%;
+    float: left;
+    margin-top: 2%;
+    margin-bottom: 4%;
+    margin-left: 2%;
+  }
+
+  .container-fluidSMS {
+    width: 45%;
+    height: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: 30%;
+    /* margin-top: 30%; */
+    margin-top: 15vh;
+    position: absolute;
+    border: 2px;
+    border-width: 1px;
+    border-style: groove;
+    box-shadow: 0px 0px 3px #fff;
+    border-radius: 5px;
+  }
+
+  .container-fluidSMS:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.3);
+  }
+
+}
+
+@media only screen and (max-width: 667px) and (orientation : landscape) {
+	/* LANDSCAPE:
+	HTC Desire, One
+	LG Optimus 2X
+	Nexus S
+	Samsung Galaxy S2
+	BlackBerry Z10 */
+
+  .container-fluidLogin {
+    width: 50%;
+    height: 98vh;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: 25%;
+    margin-top: 1vh;
+    position: absolute;
+    border: 2px;
+    border-width: 1px;
+    border-style: groove;
+    box-shadow: 0px 0px 3px #fff;
+    border-radius: 5px;
+  }
+
+  .container-fluidLogin:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.3);
+    /* background-color: rgba(241, 180, 10, 0.959); */
+  }
+
+  .container-fluidLogin #imagenLogo {
+    border-style: none;
+    width: 65%;
+    margin-top: 10%;
+    margin: 11px auto;
+    display: block;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+  }
+
+
+  #botonesIniciarSesion {
+    width: 100%;
+    margin-bottom: 1%;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    height: 2rem;
+  }
+
+  #botonIniciarTelefono{
+    width: 100%;
+    margin-bottom: 1%;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    height: 2rem;
+  }
+
+  #botonRegistrarse{
+    width: 100%;
+    margin-bottom: 1%;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    height: 2rem;
+  }
+
+  .container-fluidLogin #botonSalir{
+    width: 100%;
+    margin-bottom: 1%;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    height: 2rem;
+  }
+
+  .container-fluidLogin .form{
+    margin-top: 17%;
+    margin-bottom: 7%;
+    filter: blur(0px);
+    width: 100%;
+    margin-left: 2%;
+  }
+
+  .container-fluidLogin .form input {
+    height: 35px;
+    width: 100%;
+  }
+
+  .container-fluidLogin .form button{
+    height: 35px;
+    width: 100%;
+  }
+
+
+  .container-fluidLogin .roudend-button{
+    display: none;
+  }
+
+  .container-fluidLogin .textoLogin {
+    font-size: 69%;
+    color: #ffffff;
+    font-weight: 600;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+  }
+
+  .container-fluidSMS {
+    width: 45%;
+    height: 90vh;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: 30%;
+    /* margin-top: 30%; */
+    margin-top: 5vh;
+    position: absolute;
+    border: 2px;
+    border-width: 1px;
+    border-style: groove;
+    box-shadow: 0px 0px 3px #fff;
+    border-radius: 5px;
+  }
+
+  .container-fluidSMS:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.3);
+    /* background-color: rgba(241, 180, 10, 0.959); */
+  }
+
+  .container-fluidSMS button{
+    height: 35px;
+    width: 100%;
+  }
+
+  .container-fluidRegistro {
+    width: 40%;
+    height: 100vh;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: 30%;
+    margin-top: 0vh;
+    position: absolute;
+    border: 2px;
+    border-width: 1px;
+    border-style: groove;
+    box-shadow: 0px 0px 3px #fff;
+    border-radius: 5px;
+  }
+  
+  .container-fluidRegistro #imagenLogo {
+    border-style: none;
+    width: 25vh;
+    margin-top: 0%;
+    margin: 0px auto;
+    display: block;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+  }
+
+
+  .container-fluidRegistro .form{
+    margin-top: 3%;
+    margin-bottom: 11%;
+    filter: blur(0px);
+    width: 100%;
+  }
+
+  .container-fluidRegistro .form input {
+    width: 48%;
+    height: 40px;
+    font-size: 66%;
+    float: left;
+    margin-top: 2%;
+    margin-bottom: 4%;
+    margin-left: 2%;
+  }
+
+
+  .container-fluidRegistro button{
+    height: 30px;
+    width: 100%;
+    font-size: 72%;
+  }
+
+  .container-fluidRegistro .textoLogin {
+    font-size: 49%;
+    color: #ffffff;
+    font-weight: 600;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    margin-top: -16px;
+  }
+  
+
+  .container-fluidReset {
+    width: 50%;
+    height: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: 25%;
+    margin-top: 1%;
+    position: absolute;
+    border: 2px;
+    border-width: 1px;
+    border-style: groove;
+    box-shadow: 0px 0px 3px #fff;
+    border-radius: 5px;
+  }
+
+  .container-fluidReset button{
+    height: 35px;
+    width: 100%;
+    font-size: 72%;
+  }
+
+}
+
+
+@media only screen and (max-width: 640px) and (orientation : landscape) {
+	/* LANDSCAPE:
+	Samsung Galaxy S3, S4, S5, S6, S7
+	Samsung Galaxy Note 1, 2
+	HTC One S, V
+	Nokia 500 */
+
+  .container-fluidLogin {
+    width: 40%;
+    height: 98vh;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: 30%;
+    margin-top: 28%;
+    margin-top: 1vh;
+    position: absolute;
+    border: 2px;
+    border-width: 1px;
+    border-style: groove;
+    box-shadow: 0px 0px 3px #fff;
+    border-radius: 5px;
+  }
+
+  .container-fluidLogin:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.3);
+    /* background-color: rgba(241, 180, 10, 0.959); */
+  }
+
+  #imagenLogo {
+    border-style: none;
+    width: 50%;
+    margin-top: 10%;
+    margin: 18px auto;
+    display: block;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+  }
+
+  #botonesIniciarSesion {
+    width: 100%;
+    margin-bottom: 1%;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    height: 2rem;
+  }
+
+  #botonIniciarTelefono{
+    width: 100%;
+    margin-bottom: 1%;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    height: 2rem;
+  }
+
+  #botonRegistrarse{
+    width: 100%;
+    margin-bottom: 1%;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    height: 2rem;
+  }
+
+  .container-fluidLogin #botonSalir{
+    width: 100%;
+    margin-bottom: 1%;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    height: 2rem;
+  }
+
+  .container-fluidLogin .form{
+    margin-top: 17%;
+    margin-bottom: 7%;
+    filter: blur(0px);
+    width: 100%;
+    margin-left: 2%;
+  }
+
+  .container-fluidLogin .form input{
+    height: 35px;
+    width: 100%;
+  }
+  .container-fluidLogin .form button{
+    height: 35px;
+    width: 100%;
+  }
+
+  .container-fluidLogin #imagenLogo {
+    border-style: none;
+    width: 80%;
+    margin-top: 10%;
+    margin: 18px auto;
+    display: block;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+  }
+
+
+  .container-fluidLogin .roudend-button{
+    display: none;
+  }
+
+  .container-fluidLogin .textoLogin {
+    font-size: 69%;
+    color: #ffffff;
+    font-weight: 600;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+  }
+
+  .container-fluidSMS {
+    width: 45%;
+    height: 90vh;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: 30%;
+    /* margin-top: 30%; */
+    margin-top: 5vh;
+    position: absolute;
+    border: 2px;
+    border-width: 1px;
+    border-style: groove;
+    box-shadow: 0px 0px 3px #fff;
+    border-radius: 5px;
+  }
+
+  .container-fluidSMS:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.3);
+    /* background-color: rgba(241, 180, 10, 0.959); */
+  }
+
+  .container-fluidRegistro {
+    width: 40%;
+    height: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: 30%;
+    margin-top: 0vh;
+    position: absolute;
+    border: 2px;
+    border-width: 1px;
+    border-style: groove;
+    box-shadow: 0px 0px 3px #fff;
+    border-radius: 5px;
+  }
+  
+  
+  .container-fluidRegistro .form{
+    margin-top: 8%;
+    margin-bottom: 7%;
+    filter: blur(0px);
+    width: 100%;
+  }
+
+  .container-fluidRegistro .form input {
+    width: 48%;
+    height: 40px;
+    font-size: 66%;
+    float: left;
+    margin-top: 2%;
+    margin-bottom: 4%;
+    margin-left: 2%;
+  }
+
+
+  .container-fluidRegistro button{
+    height: 35px;
+    width: 100%;
+    font-size: 72%;
+  }
+  .container-fluidRegistro .textoLogin {
+    font-size: 49%;
+    color: #ffffff;
+    font-weight: 600;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    margin-top:-10px;
+  }
+
+  .container-fluidRegistro #imagenLogo {
+    border-style: none;
+    width: 70%;
+    margin-top: 10%;
+    margin: 10px auto;
+    display: block;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+  }
+
+  .container-fluidReset {
+    width: 40%;
+    height: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: 30%;
+    margin-top: 8vh;
+    position: absolute;
+    border: 2px;
+    border-width: 1px;
+    border-style: groove;
+    box-shadow: 0px 0px 3px #fff;
+    border-radius: 5px;
+  }
+
+  .container-fluidReset #imagenLogo {
+    border-style: none;
+    width: 65.5%;
+    margin-top: 10%;
+    margin: 5px auto;
+    display: block;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+  }
+ 
+
+}
+
+
+/*@media only screen and (max-width: 600px) and (orientation : landscape) {
+	 LANDSCAPE:
+	Nexus 4
+	Apple iPhone 5
+  
+}*/
+
+@media only screen and (max-width: 568px) and (orientation : landscape) {
+	/* LANDSCAPE:
+	HTC Desire, One
+	LG Optimus 2X
+	Nexus S
+	Samsung Galaxy S2
+	BlackBerry Z10 */
+
+  .container-fluidLogin {
+    width: 50%;
+    height: 98vh;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: 25%;
+    margin-top: 1vh;
+    position: absolute;
+    border: 2px;
+    border-width: 1px;
+    border-style: groove;
+    box-shadow: 0px 0px 3px #fff;
+    border-radius: 5px;
+  }
+
+  .container-fluidLogin:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.3);
+    /* background-color: rgba(241, 180, 10, 0.959); */
+  }
+
+  .container-fluidLogin #imagenLogo {
+    border-style: none;
+    width: 65%;
+    margin-top: 10%;
+    margin: 11px auto;
+    display: block;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+  }
+
+
+  #botonesIniciarSesion {
+    width: 100%;
+    margin-bottom: 1%;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    height: 2rem;
+  }
+
+  #botonIniciarTelefono{
+    width: 100%;
+    margin-bottom: 1%;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    height: 2rem;
+  }
+
+  #botonRegistrarse{
+    width: 100%;
+    margin-bottom: 1%;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    height: 2rem;
+  }
+
+  .container-fluidLogin #botonSalir{
+    width: 100%;
+    margin-bottom: 1%;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    height: 2rem;
+  }
+
+  .container-fluidLogin .form{
+    margin-top: 17%;
+    margin-bottom: 7%;
+    filter: blur(0px);
+    width: 100%;
+    margin-left: 2%;
+  }
+
+  .container-fluidLogin .form input {
+    height: 35px;
+    width: 100%;
+  }
+
+  .container-fluidLogin .form button{
+    height: 35px;
+    width: 100%;
+  }
+
+
+  .container-fluidLogin .roudend-button{
+    display: none;
+  }
+
+  .container-fluidLogin .textoLogin {
+    font-size: 69%;
+    color: #ffffff;
+    font-weight: 600;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+  }
+
+  .container-fluidSMS {
+    width: 45%;
+    height: 90vh;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: 30%;
+    /* margin-top: 30%; */
+    margin-top: 5vh;
+    position: absolute;
+    border: 2px;
+    border-width: 1px;
+    border-style: groove;
+    box-shadow: 0px 0px 3px #fff;
+    border-radius: 5px;
+  }
+
+  .container-fluidSMS:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.3);
+    /* background-color: rgba(241, 180, 10, 0.959); */
+  }
+
+  .container-fluidSMS button{
+    height: 35px;
+    width: 100%;
+  }
+
+  .container-fluidRegistro {
+    width: 50%;
+    height: 100vh;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: 25%;
+    margin-top: 0vh;
+    position: absolute;
+    border: 2px;
+    border-width: 1px;
+    border-style: groove;
+    box-shadow: 0px 0px 3px #fff;
+    border-radius: 5px;
+  }
+  
+  .container-fluidRegistro #imagenLogo {
+    border-style: none;
+    width: 45vh;
+    margin-top: 0%;
+    margin: 6px auto;
+    display: block;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+  }
+
+
+  .container-fluidRegistro .form{
+    margin-top: 3%;
+    margin-bottom: 11%;
+    filter: blur(0px);
+    width: 100%;
+  }
+
+  .container-fluidRegistro .form input {
+    width: 48%;
+    height: 40px;
+    font-size: 66%;
+    float: left;
+    margin-top: 2%;
+    margin-bottom: 4%;
+    margin-left: 2%;
+  }
+
+
+  .container-fluidRegistro button{
+    height: 30px;
+    width: 100%;
+    font-size: 72%;
+  }
+
+  .container-fluidRegistro .textoLogin {
+    font-size: 49%;
+    color: #ffffff;
+    font-weight: 600;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    margin-top: -14px;
+  }
+  
+
+  .container-fluidReset {
+    width: 50%;
+    height: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: 25%;
+    margin-top: 1%;
+    position: absolute;
+    border: 2px;
+    border-width: 1px;
+    border-style: groove;
+    box-shadow: 0px 0px 3px #fff;
+    border-radius: 5px;
+  }
+
+  .container-fluidReset button{
+    height: 35px;
+    width: 100%;
+    font-size: 72%;
+  }
+
+}
+
+
+
+
+
+@media only screen and (max-width : 480px) { /*surface dou*/
+
+  .container-fluidLogin {
+    width: 80%;
+    height: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: 10%;
+    margin-top: 9vh;
+    position: absolute;
+    border: 2px;
+    border-width: 1px;
+    border-style: groove;
+    box-shadow: 0px 0px 3px #fff;
+    border-radius: 5px;
+  }
+  
+  .container-fluidLogin:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.3);
+  }
+
+  .textoLogin {
+    font-size: 85%;
+    color: #ffffff;
+    font-weight: 600;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+  }
+
+  .form input{
+    height: 40px;
+    width: 100%;
+    margin-top:8%;
+  }
+
+  #imagenLogo {
+    border-style: none;
+    width: 65%;
+    margin-top: 10%;
+    margin: 5px auto;
+    display: block;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+  }
+
+  /*contenido reset password*/
+  .container-fluidReset {
+    width: 70%;
+    height: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: 15%;
+    margin-top: 25%;
+    position: absolute;
+    border: 2px;
+    border-width: 1px;
+    border-style: groove;
+    box-shadow: 0px 0px 3px #fff;
+    border-radius: 5px;
+  }
+
+  .container-fluidReset:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.3);
+      /* background-color: rgba(0,0,0,0.3); */
+  }
+
+   /*contenido registro*/
+   .container-fluidRegistro {
+    width: 86%;
+    height: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: 7%;
+    margin-top: 1%;
+    position: absolute;
+    border: 2px;
+    border-width: 1px;
+    border-style: groove;
+    box-shadow: 0px 0px 3px #fff;
+    border-radius: 5px;
+  }
+  
+  .container-fluidRegistro:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.3);
+      /* background-color: rgba(0,0,0,0.3); */
+  }
+
+  .container-fluidRegistro .roudend-button{
+    display: none;
+  }
+
+  .container-fluidRegistro .form input{
+    width: 48%;
+    height: 40px;
+    font-size: 66%;
+    float: left;
+    margin-top: 2%;
+    margin-bottom: 4%;
+    margin-left: 2%;
+  }
+
+  .bodyLogin {
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://arvispace.com/lib/ImagenesPedidos/fondos/fondo-login.png);
+    /* background-image: url(../images/fondo-login.png); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: inherit;
+  }
+
+
+   /*contenido de registro sms*/
+   .container-fluidSMS{
+    width: 70%;
+    height: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: 15%;
+    margin-top: 50%;
+    position: absolute;
+    border: 2px;
+    border-width: 1px;
+    border-style: groove;
+    box-shadow: 0px 0px 3px #fff;
+    border-radius: 5px;
+  }
+
+  .container-fluidSMS:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.3);
+      /* background-color: rgba(0,0,0,0.3); */
+  }
+}
+
+@media only screen and (max-width: 480px) and (orientation : landscape) {
+/* 
+@media only screen 
+    and (device-width : 480px) 
+    and (device-height : 320px) 
+    and (-webkit-device-pixel-ratio : 3)
+    and (orientation : landscape) {  */
+
+      .container-fluidLogin {
+        width: 50%;
+        height: 99vh;
+        padding-right: 20px;
+        padding-left: 20px;
+        margin-right: auto;
+        margin-left: 25%;
+        margin-top: 1vh;
+        position: absolute;
+        border: 2px;
+        border-width: 1px;
+        border-style: groove;
+        box-shadow: 0px 0px 3px #fff;
+        border-radius: 5px;
+      }
+    
+      .container-fluidLogin:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0,0,0,0.3);
+        /* background-color: rgba(241, 180, 10, 0.959); */
+      }
+    
+      .container-fluidLogin #imagenLogo {
+        border-style: none;
+        width: 28vh;
+        margin-top: 0%;
+        margin: 0px auto;
+        display: block;
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+      }
+
+      .container-fluidRegistro #imagenLogo {
+        border-style: none;
+        width: 42vh;
+        margin-top: 0%;
+        margin: 15px auto;
+        display: block;
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+      }
+    
+      #botonesIniciarSesion {
+        width: 100%;
+        margin-bottom: 1%;
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        height: 2rem;
+      }
+    
+      #botonIniciarTelefono{
+        width: 100%;
+        margin-bottom: 1%;
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        height: 2rem;
+      }
+    
+      #botonRegistrarse{
+        width: 100%;
+        margin-bottom: 1%;
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        height: 2rem;
+      }
+    
+      .container-fluidLogin #botonSalir{
+        width: 100%;
+        margin-bottom: 1%;
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        height: 2rem;
+      }
+    
+      .container-fluidLogin .form{
+        margin-top: 17%;
+        margin-bottom: 7%;
+        filter: blur(0px);
+        width: 100%;
+        margin-left: 2%;
+      }
+    
+      .container-fluidLogin .form input{
+        height: 35px;
+        width: 100%;
+      }
+      .container-fluidLogin .form button{
+        height: 35px;
+        width: 100%;
+      }
+    
+      .container-fluidLogin #imagenLogo {
+        border-style: none;
+        width: 70%;
+        margin-top: 10%;
+        margin: 6px auto;
+        display: block;
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+      }
+    
+    
+      .container-fluidLogin .roudend-button{
+        display: none;
+      }
+    
+      .container-fluidLogin .textoLogin {
+        font-size: 69%;
+        color: #ffffff;
+        font-weight: 600;
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+      }
+    
+      .container-fluidSMS {
+        width: 45%;
+        height: 90vh;
+        padding-right: 20px;
+        padding-left: 20px;
+        margin-right: auto;
+        margin-left: 30%;
+        /* margin-top: 30%; */
+        margin-top: 5vh;
+        position: absolute;
+        border: 2px;
+        border-width: 1px;
+        border-style: groove;
+        box-shadow: 0px 0px 3px #fff;
+        border-radius: 5px;
+      }
+    
+      .container-fluidSMS:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0,0,0,0.3);
+        /* background-color: rgba(241, 180, 10, 0.959); */
+      }
+
+      .container-fluidSMS button{
+        height: 35px;
+        width: 100%;
+      }
+    
+      .container-fluidRegistro {
+        width: 50%;
+        height: auto;
+        padding-right: 20px;
+        padding-left: 20px;
+        margin-right: auto;
+        margin-left: 30%;
+        margin-top: 0vh;
+        position: absolute;
+        border: 2px;
+        border-width: 1px;
+        border-style: groove;
+        box-shadow: 0px 0px 3px #fff;
+        border-radius: 5px;
+      }
+      
+      .container-fluidRegistro #imagenLogo {
+        border-style: none;
+        width: 37vh;
+        margin-top: 0%;
+        margin: 5px auto;
+        display: block;
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+      }
+
+
+      .container-fluidRegistro .form{
+        margin-top: 8%;
+        margin-bottom: 7%;
+        filter: blur(0px);
+        width: 100%;
+      }
+    
+      .container-fluidRegistro .form input {
+        width: 48%;
+        height: 40px;
+        font-size: 66%;
+        float: left;
+        margin-top: 2%;
+        margin-bottom: 4%;
+        margin-left: 2%;
+      }
+    
+    
+      .container-fluidRegistro button{
+        height: 35px;
+        width: 100%;
+        font-size: 72%;
+      }
+
+      
+      .container-fluidRegistro .textoLogin {
+        font-size: 49%;
+        color: #ffffff;
+        font-weight: 600;
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        margin-top:-10px;
+      }
+
+      .container-fluidReset {
+        width: 50%;
+        height: auto;
+        padding-right: 20px;
+        padding-left: 20px;
+        margin-right: auto;
+        margin-left: 25%;
+        margin-top: 1%;
+        position: absolute;
+        border: 2px;
+        border-width: 1px;
+        border-style: groove;
+        box-shadow: 0px 0px 3px #fff;
+        border-radius: 5px;
+      }
+    
+      .container-fluidReset button{
+        height: 35px;
+        width: 100%;
+        font-size: 72%;
+      }
+    
+     
+    }
+
+@media only screen and (max-width : 320px) {
+
+  
+  .container-fluidLogin {
+    width: 85%;
+    height: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: 7.5%;
+    margin-top: 7vw;
+    position: absolute;
+    border: 2px;
+    border-width: 1px;
+    border-style: groove;
+    box-shadow: 0px 0px 3px #fff;
+    border-radius: 5px;
+  }
+ 
+
+  .container-fluidLogin:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.3);
+      /* background-color: rgba(0,0,0,0.3); */
+  }
+  
+  .container-fluidLogin button {
+   height: 35px;
+   width: 100%;
+  }
+
+
+
+  .container-fluidLogin .textoLogin {
+    font-size: 85%;
+    color: #ffffff;
+    font-weight: 600;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+  }
+
+  .container-fluidLogin .form input{
+    height: 35px;
+    width: 100%;
+    margin-top:8%;
+  }
+
+  #botonesIniciarSesion {
+    width: 100%;
+    height: 36px;
+    margin-bottom: 3%;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+  }
+
+  #botonIniciarTelefono{
+    width: 100%;
+    height: 36px;
+    margin-bottom: 3%;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+  }
+
+  #botonRegistrarse{
+    width: 100%;
+    height: 36px;
+    margin-bottom: 3%;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+  }
+
+  #botonSalir{
+    width: 100%;
+    height: 36px;
+    margin-bottom: 3%;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+  }
+
+
+  /*contenido reset password*/
+  .container-fluidReset {
+    width: 70%;
+    height: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: 15%;
+    margin-top: 25%;
+    position: absolute;
+    border: 2px;
+    border-width: 1px;
+    border-style: groove;
+    box-shadow: 0px 0px 3px #fff;
+    border-radius: 5px;
+  }
+
+  .container-fluidReset:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.3);
+      /* background-color: rgba(0,0,0,0.3); */
+  }
+
+  .container-fluidReset button{
+    height: 35px;
+    width: 100%;
+  }
+
+  /*contenido registro*/
+  .container-fluidRegistro {
+    width: 86%;
+    height: 99vh;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: 7%;
+    margin-top: 1%;
+    position: absolute;
+    border: 2px;
+    border-width: 1px;
+    border-style: groove;
+    box-shadow: 0px 0px 3px #fff;
+    border-radius: 5px;
+  }
+
+  .container-fluidRegistro:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.3);
+      /* background-color: rgba(0,0,0,0.3); */
+  }
+
+
+
+
+  .container-fluidRegistro .form input{
+    width: 48%;
+    height: 40px;
+    font-size: 66%;
+    float: left;
+    margin-top: 2%;
+    margin-bottom: 4%;
+    margin-left: 2%;
+  }
+
+  .container-fluidRegistro .form{
+    margin-top: 8%;
+    margin-bottom: 13%;
+    filter: blur(0px);
+    width: 100%;
+  }
+
+  .container-fluidRegistro .textoLogin {
+    font-size: 85%;
+    color: #ffffff;
+    font-weight: 600;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    margin-top: -17px;
+  } 
+
+
+  .container-fluidRegistro #imagenLogo{
+    border-style: none;
+    width: 55%;
+    margin-top: 10%;
+    margin: 6px auto;
+    display: block;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+  }
+  
+  .container-fluidRegistro .roudend-button{
+    display: none;
+  }
+
+  .container-fluidRegistro button{
+    height: 35px;
+    width: 100%;
+  }
+
+  .bodyLogin {
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://arvispace.com/lib/ImagenesPedidos/fondos/fondo-login.png);
+    /* background-image: url(../images/fondo-login.png); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: inherit;
+  }
+
+
+  .container-fluidSMS {
+    width: 80%;
+    height: 62vh;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: 10%;
+    margin-top: 25%;
+    position: absolute;
+    border: 2px;
+    border-width: 1px;
+    border-style: groove;
+    box-shadow: 0px 0px 3px #fff;
+    border-radius: 5px;
+  }
+
+  .container-fluidSMS:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.3);
+      /* background-color: rgba(0,0,0,0.3); */
+  }
+
+  .container-fluidSMS button{
+    height: 35px;
+    width: 100%;
+  }
+  
+}
+
+
+
+/*checar aqui*/
+
+
+@media only screen and (max-width: 1366px) and (orientation : landscape) {
+
+  /* .container-fluidLogin:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 222, 252, 0.884);
+  }
+   */
+}
+
+@media only screen and (max-width: 1280px) and (orientation : landscape) {
+	/* LANDSCAPE:
+	Samsung Galaxy Tab(7.7 > 12.2)
+	Mictosoft Surface Pro 1, 2
+	Acer Iconia Tab (A100-A500)
+	ASUS Transformer Pad TF300T
+	Motorola Xoom 1, 2
+	LG Optimus Pad */
+}
+
+
+
+
+
+
+/* 
+@media screen 
+  and (device-width: 600px) 
+  and (device-height: 1024px) 
+  and (-webkit-device-pixel-ratio: 4) 
+  and (orientation: portrait) {
+
+  .container-fluidLogin:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(21, 168, 8, 0.87);
+  }
+ 
+} */
+
+
+
+/*#login .container-fluid {
+  padding: 0 !important;
+}
+#login .container-fluid .login-head {
+  width: 100%;
+  height: 20rem;
+  background-image: url('../images/fondo-login.png');
+  background-size: cover;
+  background-position: right;
+}
+#login .container-fluid .roudend-button.center {
+  position: absolute;
+  top: 18rem;
+}
+#login .container-fluid .container {
+  padding-top: 3rem;
+}
+#login .container-fluid p {
+  padding-top: 3rem;
+  text-align: center;
+}
+#login .container-fluid p.cancel {
+  padding-top: 0.5rem;
+  text-align: center;
+}*/

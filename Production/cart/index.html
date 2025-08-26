@@ -1,0 +1,107 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+
+    <!--General styles-->
+    <link rel="stylesheet/less" href="../style/buttons.less">
+    <link rel="stylesheet/less" href="../style/text.less">
+    <link rel="stylesheet/less" href="../style/inputs.less">
+    <link rel="stylesheet/less" href="../style/close.less">
+    <link rel="stylesheet/less" href="../style/carousel.less">
+    <link rel="stylesheet/less" href="../style/container-caracteristica.less">
+    <link rel="stylesheet/less" href="../style/sweet-alert.less">
+
+    <!--Styles-->
+    <link rel="stylesheet/less" href="../style/header.less">
+    <link rel="stylesheet/less" href="../style/text.less">
+    <link rel="stylesheet/less" href="../style/cart.less">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+
+    <!--JS libraries-->
+    <script src="https://arvispace.com/lib/jquery/jquery.js"></script>
+    
+    <!--JS Bootstrap scripts-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://arvispace.com/lib/bootstrap/js/bootstrap.js"></script>
+
+    <!--Sweet alert libraries-->
+    <script src="https://arvispace.com/lib/sweet-alert/dist/sweetalert2.all.min.js"></script>
+
+    <!--Vue development-->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <!--Less style-->
+    <script src="https://cdn.jsdelivr.net/npm/less"></script>
+
+    <!--Axios http request-->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    
+    <!--CSS libraries-->
+    <link rel="stylesheet" href="https://arvispace.com/lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://arvispace.com/lib/icons/index.css">
+    
+    
+</head>
+<body>
+    <div id="cart">
+        <header-nav
+            nav-to-done-icon
+            text-done="Cancelar"
+            header-icon = "../images/logo.png"
+        ></header-nav>
+       
+        <products-in-cart
+            ref="productosInCart"
+            v-bind:productos="productos"
+            :initialize="initialize"
+            @clicked-button="setActiveConfirmCart"
+            @on-change-total="onChangeTotal"
+            @set-package-cost="setPackageCost"
+            @delete-producto="deleteProduct"
+            @increment-product="changeProduct"
+            @decrement-product="decrementProduct"
+            :costo-envio = "costoEnvio"
+        ></products-in-cart>
+
+        <confirm-cart
+            v-bind:is-active="isActiveConfirmCart"
+            :initialize="initialize"
+            :total="total"
+            :locations="locations"
+            @close="regresarCarCobro"
+            @on-submit="validateExists"
+            @close-confirmacion="setActiveConfirmCart"
+        ></confirm-cart>
+    </div>
+</body>
+
+<!--Scripts jquery to Vue-->
+<script src="../js/utils.js"></script>
+
+<!--Generañ components by Vue js-->
+<script src="../components/rounded-buttons.js"></script>
+<script src="../components/close-container.js"></script>
+<script src="../components/image-to-carousel.js"></script>
+<script src="../components/buttons.js"></script>
+<script src="../components/inputs.js"></script>
+<script src="../components/forms.js"></script>
+<script src="../components/carousel.js"></script>
+
+<!--Components by vue-->
+<script src="../components/header.js"></script>
+<script src="../components/card-cobro.js"></script>
+<script src="../components/confirm-cart.js"></script>
+<script src="../components/container-caracteristica.js"></script>
+<script src="../components/product-in-cart.js"></script>
+<script src="../components/productos-in-cart.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+<!--Initialize App request and routes to services--
+<script src="js/init.js"></script>
+
+</html>
