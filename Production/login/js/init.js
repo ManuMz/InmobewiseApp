@@ -337,6 +337,7 @@ let content = new Vue({ //estructura createApp:any
                 const credentials = signInWithPopup(auth, googleProvider);
 
                 console.log("Credenciales Google del usuario: " + credentials);
+                console.log("Comentario de prueba para subir cambio");
 
                 //alert("todo ha estado correcto con el inicio de sesion");
                 
