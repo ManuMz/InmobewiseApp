@@ -288,7 +288,6 @@ let login = { // Variable login
         },
         async getresponseregisterfb()
         {
-             
            // alert("a conseguir respuesta fb: "+this.nombreFb+" id: "+this.idFb);
              try{
                 let services ="https://arvispace.com/serviciosASAR/validarNomberFb.php";
@@ -350,15 +349,29 @@ let login = { // Variable login
             :field="buttonHeaderUser" style="-webkit-filter: blur(0px);filter: blur(0px);color:white;"
             ></rounded-button>
 
+
+            <!--Inicio de sesion-->
             <div class="container" style="display: contents;text-align: center;">
                 <component-form
                     :schema="formSchema"
                     :data="formDefaultData"
                     :buttons="buttons" style="margin-top: 8%;margin-bottom: 7%;-webkit-filter: blur(0px);filter: blur(0px);width: 100%;"
                     @on-submit="onSubmit"
-                ></component-form>  
-
+                ></component-form>
                 
+                <!--Boton inicio de sesion con Google-->
+                <div class="col-sm-4" style="display: contents;text-align: center;">
+                    <button 
+                    class="btn btn-primary"
+                    style="margin-top: 8%;margin-bottom: 7%;-webkit-filter: blur(0px);filter: blur(0px);width: 100%;"
+                    :field="buttonToGoogle" 
+                    @clicked-button="requestGoogle"  
+                    id="googleLogin"
+                    ><img src='../images/icon_google.png' style='height:24px'>
+                    <span>Continuar con Google</span>
+                    </button>
+                </div>
+
                 <div class="row" style="margin-bottom:4%;">
 
                     <div class="col-sm-12"><p class="textoLogin">¿Olvidaste tu contraseña? <a href="#" @click="recuperarPass" class="subtextoLogin">Recuperala aqui</a></p></div>
@@ -375,16 +388,7 @@ let login = { // Variable login
                     </div>
 
                     <!--<div class="col-sm-4" v-show="buttongmailactive">-->
-
-                    <div class="col-sm-4" v-show="buttongmailactive">
-                      <primary-button-block  
-                      class="button-apple  mt-3" 
-                      :field="buttonToGoogle" 
-                      @clicked-button="requestGoogle" 
-                      id="botonIniciarGmail">
-                      </primary-button-block>
-                    </div>
-
+                    
                     <div class="col-sm-6" v-show="buttongmailactive">
                       <primary-button-block  
                       class="button-apple  mt-3" 

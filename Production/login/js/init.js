@@ -14,7 +14,7 @@ import { GoogleAuthProvider , signInWithPopup} from "https://www.gstatic.com/fir
 
 //Options API
 //objeto de opciones
-let content = new Vue({ //estructura createApp:any
+let content = new Vue({
     el:"#login",
     components:{
         'component-login':login,
@@ -45,10 +45,9 @@ let content = new Vue({ //estructura createApp:any
         }
     },
 
-    async created(){
-        await this.requestGoogle();
-
-    },
+    // async created(){
+    //     await this.requestGoogle();
+    // },
 
     beforeCreate(){/*
         firebase.auth()
@@ -126,11 +125,9 @@ let content = new Vue({ //estructura createApp:any
               //  "https://arvispace.com/serviciosASARAmbientePruebas/insertarUsuario.php" :
                 //"https://arvispace.com/serviciosASAR/insertarUsuario.php";
 
-          //   alert("correo: "+formSubmitted.data.input_email.value+" pass: "+formSubmitted.data.input_password.value+" usuario: "+formSubmitted.data.input_apodo.value+" nombre completo: "+formSubmitted.data.input_nombre.value+" telefono: "+formSubmitted.data.input_telefono.value);
+            //alert("correo: "+formSubmitted.data.input_email.value+" pass: "+formSubmitted.data.input_password.value+" usuario: "+formSubmitted.data.input_apodo.value+" nombre completo: "+formSubmitted.data.input_nombre.value+" telefono: "+formSubmitted.data.input_telefono.value);
 
-          let services="https://arvispace.com/serviciosASAR/insertarUsuario.php"
-          
-
+            let services="https://arvispace.com/serviciosASAR/insertarUsuario.php"
 
             let form = new FormData();
             form.append('correo',formSubmitted.data.input_email.value);
@@ -328,52 +325,51 @@ let content = new Vue({ //estructura createApp:any
 
         /*modificacion del metodo para INMOBEWISE*/
         //metodo asincrono
-        async requestGoogle () {
+        requestGoogle () {
             const googleProvider = new GoogleAuthProvider();
             
             try {
-                //Se despliega la ventana emergente de google de manera asincrona, se guardan
-                //las credenciales google del usuario
+                // Se despliega la ventana emergente de google de manera asincrona, se guardan
+                // las credenciales google del usuario
                 const credentials = signInWithPopup(auth, googleProvider);
 
                 console.log("Credenciales Google del usuario: " + credentials);
-                console.log("Comentario de prueba para subir cambio");
 
-                //alert("todo ha estado correcto con el inicio de sesion");
+                alert("todo ha estado correcto con el inicio de sesion");
                 
                 
             } catch (error) {
                 console.log(error);
             }
 
-            this.loadLogin = true
-            provider.addScope("https://www.googleapis.com/auth/userinfo.profile");
-            firebase.auth().signInWithRedirect(provider);
-            // let provider = new firebase.auth.GoogleAuthProvider();
-            // firebase.auth().signInWithPopup(provider).then((result) => {
-            //   /** @type {firebase.auth.OAuthCredential} */
+        //     this.loadLogin = true
+        //     provider.addScope("https://www.googleapis.com/auth/userinfo.profile");
+        //     firebase.auth().signInWithRedirect(provider);
+        //     let provider = new firebase.auth.GoogleAuthProvider();
+        //     firebase.auth().signInWithPopup(provider).then((result) => {
+        //       /** @type {firebase.auth.OAuthCredential} */
 
-            //   let user = result.user;
-            //   let nombre=user.displayName;
-            //   let email=user.email;
-            //   let id=user.uid;
-            //   //alert("todo ha estado correcto con el inicio de sesion con: "+JSON.stringify(user));
+        //       let user = result.user;
+        //       let nombre=user.displayName;
+        //       let email=user.email;
+        //       let id=user.uid;
+        //       //alert("todo ha estado correcto con el inicio de sesion con: "+JSON.stringify(user));
                  
-            //    this.idG=id;
-            //    this.mailG=email;
-            //    this.nameG=nombre;               
-            //    this.getresponseregistergoogle();
+        //        this.idG=id;
+        //        this.mailG=email;
+        //        this.nameG=nombre;               
+        //        this.getresponseregistergoogle();
 
-            //   //console.log("Has iniciado sesión con Google!");
-            // }).catch((error) => {
-            //   let errorCode = error.code;
-            //   let errorMessage = error.message;
-            //   let email = error.email;
-            //   let credential = error.credential;
-            //   console.log(error.message);
-            //    //alert("error de mensaje: "+errorMessage+" erorcode: "+errorCode);  
-            //    createAviso("Ha ocurrido un error por favor intentelo más tarde");
-            // });
+        //       //console.log("Has iniciado sesión con Google!");
+        //     }).catch((error) => {
+        //       let errorCode = error.code;
+        //       let errorMessage = error.message;
+        //       let email = error.email;
+        //       let credential = error.credential;
+        //       console.log(error.message);
+        //        //alert("error de mensaje: "+errorMessage+" erorcode: "+errorCode);  
+        //        createAviso("Ha ocurrido un error por favor intentelo más tarde");
+        //     });
         },
         /*async getresponseregistergoogle()
         { 
