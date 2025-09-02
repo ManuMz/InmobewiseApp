@@ -70,7 +70,7 @@
             @hide-login="handleLogin"
             :is-active="isLoginActive"
             @request-facebook="requestFacebook"
-            @request-google="requestGoogle"
+            @sign-in-google="signInGoogle"
             @request-apple="requestApple"
             @on-submit="onSubmit"
             @open-register="setContent"
@@ -93,7 +93,7 @@
         <ar-anim
         :is-active="isArAnimActive"
         @request-facebook="requestFacebook"
-        @request-google="requestGoogle"
+        @sign-in-google="signInGoogle"
         @request-apple="requestApple"
         @active-login="handleLogin"
         @active-register="handleRegister"

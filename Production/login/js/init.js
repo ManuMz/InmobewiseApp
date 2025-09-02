@@ -10,8 +10,12 @@
 //Se importa la autenticacion desde "firebase.js"
 import {auth} from '../../components/firebase.js';
 
-//Autenticacion con google 
-import { GoogleAuthProvider , signInWithPopup} from "https://www.gstatic.com/firebasejs/12.1.0/firebase-auth.js";
+//Autenticacion con googleventana emergente
+//import { GoogleAuthProvider , signInWithPopup} from "https://www.gstatic.com/firebasejs/12.1.0/firebase-auth.js";
+
+//Autenticacion con googleredireccionamiento
+import {GoogleAuthProvider, signInWithRedirect,getRedirectResult } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-auth.js";
+
 
 //Options API
 //objeto de opciones
@@ -75,7 +79,7 @@ let content = new Vue({
         }); */
     },
     mounted() {
-       
+        this.getOAuthToken();
     },
 
     // Los métodos son funciones que modifican el estado y activan actualizaciones.
@@ -324,28 +328,16 @@ let content = new Vue({
 
         /*modificacion del metodo para INMOBEWISE*/
         //metodo asincrono
-        async requestGoogle () {
-            const googleProvider = new GoogleAuthProvider();
-            
+        signInGoogle () { 
             try {
-                // Se despliega la ventana emergente de google de manera asincrona, se guardan
-                // las credenciales google del usuario
-                const credentials = await signInWithPopup(auth, googleProvider);
-                console.log("Credenciales Google del usuario: ", credentials);
-                //alert("todo ha estado correcto con el inicio de sesion");
+                const googleProvider = new GoogleAuthProvider();
                 
-                //muestra el nombre del usuario
-                //credentials.user.displayname;
-
-                //Registro del usuario a la BD
-
-
-
-
-                //Comunicacion con unity por medio de UniwebView
+                //-----------VENTANA EMERGENTE---------
+                //const credential = await signInWithPopup(auth, googleProvider); 
+                //console.log("Credencial Google del usuario: ", credential);
                 
-                //Bienvenido a Inmobewise + nombre de usuario
-
+                //------------REDIRECCIONAMIENTO---------
+                signInWithRedirect(auth, googleProvider);
 
             } catch (error) {
                 console.error("Error al iniciar sesion con Google: ",error);
@@ -381,10 +373,37 @@ let content = new Vue({
         //     });
         },
         //MODIFICACION INMOBEWISE
-        async getResponseGoogle(){
+        getOAuthToken(){
+
+            getRedirectResult(auth).then((result) => {
+              
+                const credential = GoogleAuthProvider.credentialFromResult(result);
+                const token = credential.accessToken;
+                const user = result.user;
+
+                console.log("TOKEN DEL USUARIO",token);
+                console.log("Usuario", user);
+                
+            }).catch((error) => {
+                // Handle Errors here.
+                //const errorCode = error.code;
+                const errorMessage = error.message;
+                //const email = error.customData.email;
+                // The AuthCredential type that was used.
+                //const credential = GoogleAuthProvider.credentialFromError(error);
+                
+                console.log(errorMessage);
+                
+            });
+        },
+        async registerGoogleUser(){
 
             let service = "";
 
+        },
+
+        welcomeToInmobewise(){
+            //Comunicacion con unity por medio de UniwebView
         },
 
         /*async getresponseregistergoogle()

@@ -312,9 +312,9 @@ let login = { // Variable login
             }
 
         },
-        requestGoogle() {
+        signInGoogle() {
             //console.log("request-google en Login.js");
-            this.$emit("request-google");
+            this.$emit("sign-in-google");
         },
         requestApple() {
           console.log("apple");
@@ -361,7 +361,7 @@ let login = { // Variable login
                     <button 
                     class="btn btn-primary"
                     style="margin-top: 8%;margin-bottom: 7%;-webkit-filter: blur(0px);filter: blur(0px);width: 100%;"
-                    @click="requestGoogle"  
+                    @click="signInGoogle"  
                     id="buttonToGoogle"
                     ><img src='../images/icon_google.png' style='height:24px'>
                     <span>Continuar con Google</span>

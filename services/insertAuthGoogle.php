@@ -18,21 +18,31 @@ try{
     $displayName =$_POST['displayName'];
     $UID =$_POST['UID'];
 
+    //Inicializar variable OUT en MySQL
+    $con ->query("SET @existEmail = 0");
+
     //validar si el correo Google/Gmail ya se encuentra registrado
-    $stmt = $con->prepare("CALL sp_CheckEmailUser(?)"); //Preparar y ejecutar el procedimiento almacenado
+    $stmt = $con->prepare("CALL sp_CheckEmailUser(?, @existEmail)"); //Preparar y ejecutar el procedimiento almacenado
     $stmt->bind_param("s", $email);//ingresa el email como parametro para el sp
     $stmt->execute();
+    $stmt->close();
     
     //Obtener resultado
-    $result = $stmt->get_result();
-    $existEmailUser=$result->fetch_assoc(); //1 indica que el correo ya existe, 0 indica lo contrario
+    $result = $con->query("SELECT @existEmail AS existEmail");
+    $row = $result->fetch_assoc(); //1 indica que el correo ya existe, 0 indica lo contrario
+    
+    if((int)$row['existEmail']==1){ //Si existe el correo Google, se actualiza el registro, agregando UID
+        UpdateUserToGoggleUser($con, $UID);
+    }
+    else{ //se agrega el correo, nombre y UID del usuario Google
+        AddGoogleUser($con, $email, $displayName, $UID);
+    }
 
     echo json_encode([
         'success'=> true,
-        'existe' => isset($existEmailUser['existe']) ? (int)$existEmailUser['existe'] : 0
+        'existe' => (int )$row['existEmail']
     ]);
 
-    $stmt->close();
     $con->close();
 
 }
@@ -42,6 +52,21 @@ catch(Exception $e){
         'success' => false,
         'message' => 'Error: ' . $e->getMessage()
     ]);
+}
+
+
+function AddGoogleUser(mysqli $con,string $email, string $displayname, string $UID){
+    $stmt=$con->prepare("CALL sp_AddGoogleUser(?)");
+    $stmt->bind_param("sss",$UID, $displayName,$email);
+
+
+    //Obtener resultado
+    $result = $stmt->get_result();
+}
+
+function UpdateUserToGoggleUser(mysqli $con, string $UID){
 
 }
+
+
 ?>
