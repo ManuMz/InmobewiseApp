@@ -3,10 +3,18 @@
 <?php
 //funcion que retornara la conexion de la base de datos
 function conectar(){
+  //Base de datos produccion
   $bd  = "arvis_space";
-  // $bd  = "arvis_spaceAmbpruebas";
-  $enlace =  mysqli_connect('localhost', 'arvispaceroot', 'MindFlyStudio2020PhpMyAdmin', $bd);
-  // $enlace =  mysqli_connect('arvis.mx', 'arvis', 'nZc4yQ)aXibB', $bd);
+
+  //Base de datos testing
+  //$bd  = "arvis_spaceAmbpruebas"; 
+  
+  //Enlace anterior
+  //$enlace =  mysqli_connect('localhost', 'arvispaceroot', 'MindFlyStudio2020PhpMyAdmin', $bd);
+  
+  //Nuevo enlace, modificado: 11/08/2025
+  $enlace = mysqli_connect('localhost', 'user_mindfly', 'mindfly_2025', $bd);
+  
   $tildes = mysqli_query($enlace,"SET NAMES 'utf8'");
   mysqli_set_charset($enlace,'utf8');
   $esp = mysqli_query($enlace,"SET lc_time_names = 'es_ES'" );
@@ -22,4 +30,4 @@ function conectar(){
 	  #Ahora liberamos el resultado
 mysqli_free_result($enlace);
 }
- ?>
+?>

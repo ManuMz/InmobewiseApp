@@ -1,5 +1,4 @@
 /*aqui se modifica la vista de login en el de ar-anim-js ya no*/
-
 let login = { // Variable login
     props:{
         isActive:false
@@ -124,30 +123,31 @@ let login = { // Variable login
     },
     beforeCreate()
     {
-        firebase.auth()
-        .getRedirectResult()
-        .then((result) => {
-            //alert("result del redirect: "+JSON.stringify(result)+"result credential: "+JSON.stringify(result.credential));
-          if (result.credential) {
-              var user = result.user;
-              // This gives you a Facebook Access Token. You can use it to access the Facebook API.
-              let accessToken = result.credential.accessToken;
-              let name=user.displayName;
-              let uid=user.uid;
-              this.nombreFb=name;
-              this.idFb= uid;
-             this.getresponseregisterfb();
-          }
-        }).catch((error) => {
-          // Handle Errors here.
-          let errorCode = error.code;
-          let errorMessage = error.message;
-          let email = error.email;
-          let credential = error.credential;
+        //console.log(auth);
+        // firebase.auth()
+        // .getRedirectResult()
+        // .then((result) => {
+        //     //alert("result del redirect: "+JSON.stringify(result)+"result credential: "+JSON.stringify(result.credential));
+        //   if (result.credential) {
+        //       var user = result.user;
+        //       // This gives you a Facebook Access Token. You can use it to access the Facebook API.
+        //       let accessToken = result.credential.accessToken;
+        //       let name=user.displayName;
+        //       let uid=user.uid;
+        //       this.nombreFb=name;
+        //       this.idFb= uid;
+        //      this.getresponseregisterfb();
+        //   }
+        // }).catch((error) => {
+        //   // Handle Errors here.
+        //   let errorCode = error.code;
+        //   let errorMessage = error.message;
+        //   let email = error.email;
+        //   let credential = error.credential;
 
-          //alert("errors: "+errorCode+" -- "+errorMessage+" -- "+email+" -- "+credential);
-          createAviso("Ha ocurrido un error por favor intentelo más tarde");
-        }); 
+        //   //alert("errors: "+errorCode+" -- "+errorMessage+" -- "+email+" -- "+credential);
+        //   createAviso("Ha ocurrido un error por favor intentelo más tarde");
+        // }); 
     },
     mounted(){//agregue aqui
         this.os = getMobileOperatingSystem();
@@ -202,25 +202,25 @@ let login = { // Variable login
         requestFacebook(){
             
            // alert("request fb 1");
-            let provider = new firebase.auth.FacebookAuthProvider();
+            // let provider = new firebase.auth.FacebookAuthProvider();
 
-            firebase.auth().signInWithRedirect(provider).then(() => 
-            { 			               
-                 firebase.auth().getRedirectResult().then(result => { 					
-                    console.log(result); 					
-                    // alert("resultado: "+result);
-                    const that = this; 					
-                    this.storage.set(TOKEN_KEY, result.user.refreshToken).then(res => 
-                     { 							
-                        that.authenticationState.next(true); 		
-                        //alert("autentication: +"+taht);				
-                      }); 				
-                    }).catch(function(error) 
-                    { 					
-                      //  alert(error.message); 
-                    }); 
+            // firebase.auth().signInWithRedirect(provider).then(() => 
+            // { 			               
+            //      firebase.auth().getRedirectResult().then(result => { 					
+            //         console.log(result); 					
+            //         // alert("resultado: "+result);
+            //         const that = this; 					
+            //         this.storage.set(TOKEN_KEY, result.user.refreshToken).then(res => 
+            //          { 							
+            //             that.authenticationState.next(true); 		
+            //             //alert("autentication: +"+taht);				
+            //           }); 				
+            //         }).catch(function(error) 
+            //         { 					
+            //           //  alert(error.message); 
+            //         }); 
             
-                })
+            //     })
            /*
               let provider = new firebase.auth.FacebookAuthProvider();
               firebase.auth().signInWithRedirect(provider)
@@ -281,10 +281,6 @@ let login = { // Variable login
               });
   
               */
-              
-  
-  
-  
         },
         async getresponseregisterfb()
         {
@@ -307,7 +303,7 @@ let login = { // Variable login
                 else
                 {//registro existoso
                     let params = "correo="+this.nombreFb+"&password="+this.idFb+"&userName="+this.nombreFb+"&nombreCompleto="+this.nombreFb+"&telefono="+this.nombreFb;
-                    comunicateWebView("logguer",params);
+                    comunicateWebView("logg  u  er",params);
                 }
                 //alert("rspuesta: "+JSON.stringify(resp)+" respuesta2: "+JSON.stringify(respuestaregister));
             }
@@ -317,10 +313,11 @@ let login = { // Variable login
 
         },
         requestGoogle() {
-          this.$emit("request-google");
+            //console.log("request-google en Login.js");
+            this.$emit("request-google");
         },
         requestApple() {
-          console.log("apple")
+          console.log("apple");
           this.$emit("request-apple");
         },
         setActiveresetPassword() {
@@ -364,9 +361,8 @@ let login = { // Variable login
                     <button 
                     class="btn btn-primary"
                     style="margin-top: 8%;margin-bottom: 7%;-webkit-filter: blur(0px);filter: blur(0px);width: 100%;"
-                    :field="buttonToGoogle" 
-                    @clicked-button="requestGoogle"  
-                    id="googleLogin"
+                    @click="requestGoogle"  
+                    id="buttonToGoogle"
                     ><img src='../images/icon_google.png' style='height:24px'>
                     <span>Continuar con Google</span>
                     </button>
@@ -410,6 +406,4 @@ let login = { // Variable login
             </div>
         </div>
     `
-    
-
 }

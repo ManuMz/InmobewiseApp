@@ -6,8 +6,9 @@
     content.init("testing","1","{}")
 });
 */
+
 //Se importa la autenticacion desde "firebase.js"
-import {auth} from '../components/firebase.js';
+import {auth} from '../../components/firebase.js';
 
 //Autenticacion con google 
 import { GoogleAuthProvider , signInWithPopup} from "https://www.gstatic.com/firebasejs/12.1.0/firebase-auth.js";
@@ -45,11 +46,9 @@ let content = new Vue({
         }
     },
 
-    // async created(){
-    //     await this.requestGoogle();
-    // },
-
-    beforeCreate(){/*
+    beforeCreate(){
+        //console.log(auth);
+        /*
         firebase.auth()
         .getRedirectResult()
         .then((result) => {
@@ -124,7 +123,7 @@ let content = new Vue({
             //let services = this.initialize.use_mode == "testing" ?
               //  "https://arvispace.com/serviciosASARAmbientePruebas/insertarUsuario.php" :
                 //"https://arvispace.com/serviciosASAR/insertarUsuario.php";
-
+ 
             //alert("correo: "+formSubmitted.data.input_email.value+" pass: "+formSubmitted.data.input_password.value+" usuario: "+formSubmitted.data.input_apodo.value+" nombre completo: "+formSubmitted.data.input_nombre.value+" telefono: "+formSubmitted.data.input_telefono.value);
 
             let services="https://arvispace.com/serviciosASAR/insertarUsuario.php"
@@ -325,21 +324,31 @@ let content = new Vue({
 
         /*modificacion del metodo para INMOBEWISE*/
         //metodo asincrono
-        requestGoogle () {
+        async requestGoogle () {
             const googleProvider = new GoogleAuthProvider();
             
             try {
                 // Se despliega la ventana emergente de google de manera asincrona, se guardan
                 // las credenciales google del usuario
-                const credentials = signInWithPopup(auth, googleProvider);
-
-                console.log("Credenciales Google del usuario: " + credentials);
-
-                alert("todo ha estado correcto con el inicio de sesion");
+                const credentials = await signInWithPopup(auth, googleProvider);
+                console.log("Credenciales Google del usuario: ", credentials);
+                //alert("todo ha estado correcto con el inicio de sesion");
                 
+                //muestra el nombre del usuario
+                //credentials.user.displayname;
+
+                //Registro del usuario a la BD
+
+
+
+
+                //Comunicacion con unity por medio de UniwebView
                 
+                //Bienvenido a Inmobewise + nombre de usuario
+
+
             } catch (error) {
-                console.log(error);
+                console.error("Error al iniciar sesion con Google: ",error);
             }
 
         //     this.loadLogin = true
@@ -371,11 +380,18 @@ let content = new Vue({
         //        createAviso("Ha ocurrido un error por favor intentelo más tarde");
         //     });
         },
+        //MODIFICACION INMOBEWISE
+        async getResponseGoogle(){
+
+            let service = "";
+
+        },
+
         /*async getresponseregistergoogle()
         { 
 
             //alert("registrar en gmail: "+this.mailG+" -- "+this.nameG+" -- "+this.idG);
-             try{
+            try{
                 let services ="https://arvispace.com/serviciosASAR/validarNomberGmail.php";
                 let form = new FormData()
                 form.append("nombreGmail",this.mailG);
@@ -395,10 +411,10 @@ let content = new Vue({
                     comunicateWebView("logguer",params);
                 }
 
-             }
-             catch (error) {
+            }
+            catch (error) {
                 createAviso("Ha ocurrido un error por favor intentelo más tarde");
-             }
+            }
 
         },*/
         async getresponseregisterfb()
